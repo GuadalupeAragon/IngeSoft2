@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BlackCircle-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"board",
+		"laps",
+		"players",
+		"index",
+		"winner",
+		"diceCollection",
+		"endOfGame"
+	],
+	"name" : "Game",
+	"type" : "normal"
+}

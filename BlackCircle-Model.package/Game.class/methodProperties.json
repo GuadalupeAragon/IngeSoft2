@@ -1,0 +1,14 @@
+{
+	"instance" : {
+		"hasEnded" : "Guadalupe 9/17/2017 15:23",
+		"move:foward:" : "Guadalupe 9/17/2017 16:33",
+		"assertIsTheTurnOf:" : "Guadalupe 9/16/2017 12:04",
+		"winner" : "Guadalupe 9/17/2017 15:22",
+		"assertWinner:" : "Guadalupe 9/17/2017 15:42",
+		"initializeWithBoard:withLaps:involving:withDices:" : "Guadalupe 9/17/2017 16:22",
+		"playTurn:" : "Guadalupe 9/17/2017 16:06"
+	},
+	"class" : {
+		"withBoard:withLaps:involving:withDices:" : "Guadalupe 9/17/2017 14:58"
+	}
+}

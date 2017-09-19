@@ -1,0 +1,3 @@
+accesing
+currentLap
+	^ lap
