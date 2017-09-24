@@ -1,5 +1,4 @@
 initialization
 initializeWith: aNumberOfBoxes
 	numberBoxes := aNumberOfBoxes.
-	playersPosition := Dictionary new
-	
+	playersHistory := Dictionary new.

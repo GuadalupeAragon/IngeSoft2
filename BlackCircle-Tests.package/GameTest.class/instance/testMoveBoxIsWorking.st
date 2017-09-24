@@ -2,7 +2,7 @@ tests
 testMoveBoxIsWorking
 	| player board game |
 	player := Player named: 'Hijitus'.
-	board := Board with: 4.
+	board := Board with: 4 source: (FixedEffectSequence generating: {NoEffect new}).
 	game := Game
 		withBoard: board
 		withLaps: 3

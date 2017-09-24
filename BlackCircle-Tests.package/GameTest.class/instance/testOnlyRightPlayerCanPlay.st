@@ -3,11 +3,13 @@ testOnlyRightPlayerCanPlay
 	| board game playerOne playerTwo |
 	playerOne := Player named: 'Guada'.
 	playerTwo := Player named: 'Hijitus'.
-	board := Board with: 10.
+	board := Board with: 10 source: (FixedEffectSequence generating: {NoEffect new}).
 	game := Game
 		withBoard: board
 		withLaps: 3
-		involving: {playerOne . playerTwo}
+		involving:
+			{playerOne.
+			playerTwo}
 		withDices: {(Dice with: 6 source: Random new)}.
 	game playTurn: playerOne.
 	game playTurn: playerTwo.

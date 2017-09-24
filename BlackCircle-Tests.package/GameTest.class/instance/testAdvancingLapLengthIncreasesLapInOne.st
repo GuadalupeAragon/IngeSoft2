@@ -2,7 +2,7 @@ tests
 testAdvancingLapLengthIncreasesLapInOne
 	| player board game |
 	player := Player named: 'Facu'.
-	board := Board with: 4.
+	board := Board with: 4 source: (FixedEffectSequence generating: {NoEffect new}).
 	game := Game
 		withBoard: board
 		withLaps: 3

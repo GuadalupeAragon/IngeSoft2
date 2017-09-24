@@ -5,6 +5,7 @@ move: aPlayer foward: aNumberOfBoxes
 	numberOfBox := position currentBox.
 	numberOfLap := position currentLap.
 	numberOfBox := numberOfBox + aNumberOfBoxes.
+	
 	board lapLength < numberOfBox
 		ifTrue: [ numberOfLap := numberOfLap + (numberOfBox quo: board lapLength).
 			numberOfBox := numberOfBox rem: board lapLength ].
