@@ -1,17 +1,18 @@
 {
 	"instance" : {
-		"movePlayersExcept:backwards:" : "Guadalupe 9/23/2017 19:44",
-		"move:foward:" : "Guadalupe 9/23/2017 18:57",
+		"movePlayersExcept:backwards:" : "Guadalupe 9/27/2017 20:54",
+		"move:foward:" : "Guadalupe 9/27/2017 21:03",
 		"playTurn:" : "Guadalupe 9/23/2017 19:00",
 		"hasEnded" : "Guadalupe 9/17/2017 15:23",
 		"winner" : "Guadalupe 9/17/2017 15:22",
-		"move:backwards:" : "Guadalupe 9/23/2017 19:54",
-		"moveToPreviousPosition:" : "Guadalupe 9/23/2017 21:49",
-		"assertIsTheTurnOf:" : "Guadalupe 9/16/2017 12:04",
+		"moveToPreviousPosition:" : "Guadalupe 9/27/2017 20:54",
 		"initializeWithBoard:withLaps:involving:withDices:" : "Guadalupe 9/17/2017 16:22",
+		"assertIsTheTurnOf:" : "Guadalupe 9/16/2017 12:04",
+		"positionWhenMoving:from:" : "Guadalupe 9/27/2017 21:02",
+		"move:backward:" : "Guadalupe 9/27/2017 20:58",
 		"applyEffect:to:" : "Guadalupe 9/23/2017 18:58",
 		"assertWinner:" : "Guadalupe 9/17/2017 15:42",
-		"movePlayersToBeginning" : "Guadalupe 9/23/2017 18:34"
+		"movePlayersToBeginning" : "Guadalupe 9/27/2017 20:54"
 	},
 	"class" : {
 		"withBoard:withLaps:involving:withDices:" : "Guadalupe 9/17/2017 14:58"

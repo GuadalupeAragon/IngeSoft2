@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Effect",
+	"super" : "Object",
 	"category" : "BlackCircle-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AtomicBombEffect",
+	"name" : "Effect",
 	"type" : "normal"
 }

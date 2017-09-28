@@ -1,3 +1,3 @@
 throwing
 throw
-	^ source nextInt: faces
+	^ source nextInt: faces 

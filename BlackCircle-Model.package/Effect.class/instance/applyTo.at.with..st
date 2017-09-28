@@ -1,3 +1,3 @@
 applying
 applyTo: aPlayer at: game with: board
-	game move: aPlayer backward: 4
+	self subclassResponsibility

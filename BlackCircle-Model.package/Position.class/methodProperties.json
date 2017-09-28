@@ -2,7 +2,8 @@
 	"instance" : {
 		"currentBox" : "Guadalupe 9/14/2017 15:12",
 		"currentLap" : "Guadalupe 9/15/2017 14:48",
-		"initializeWithLap:withBox:" : "Guadalupe 9/17/2017 17:50"
+		"initializeWithLap:withBox:" : "Guadalupe 9/17/2017 17:50",
+		"printOn:" : "Guadalupe 9/27/2017 21:09"
 	},
 	"class" : {
 		"inLap:inBox:" : "Guadalupe 9/17/2017 17:50"

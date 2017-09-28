@@ -1,5 +1,5 @@
 update
-updatePositionOf: aPlayer withBox: numberOfBox withLap: numberOfLap
+updatePositionOf: aPlayer withBox: numberOfBox
 	playersHistory
 		at: aPlayer
 		put:
