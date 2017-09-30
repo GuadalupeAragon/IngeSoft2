@@ -1,5 +1,5 @@
 move
-move: aPlayer backward: aNumberOfBoxes
+move: aPlayer forward: aNumberOfBoxes
 	| position  nextPosition |
 	position := board positionOf: aPlayer.
 	nextPosition := self positionWhenMoving: aNumberOfBoxes from: position.

@@ -6,7 +6,7 @@ testOnlyRightPlayerCanPlay
 	board := Board with: 10 source: (FixedEffectSequence generating: {NoEffect new}).
 	game := Game
 		withBoard: board
-		withLaps: 3
+		requiredLapsToWin: 3
 		involving:
 			{playerOne.
 			playerTwo}

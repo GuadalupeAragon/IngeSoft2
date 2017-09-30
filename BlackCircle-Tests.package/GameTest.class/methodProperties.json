@@ -1,17 +1,17 @@
 {
 	"instance" : {
-		"testWhenAPlayerWins" : "Guadalupe 9/23/2017 18:19",
-		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 9/23/2017 18:19",
-		"testUntilWinning" : "Guadalupe 9/23/2017 18:18",
-		"testPlayerTurnIsWorking" : "Guadalupe 9/23/2017 18:19",
-		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 9/23/2017 19:55",
-		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 9/23/2017 18:40",
-		"testMoveBoxIsWorking" : "Guadalupe 9/23/2017 18:19",
-		"testWhenAPlayerIsAtBoxWithSpeedUpEffect" : "Guadalupe 9/23/2017 19:04",
-		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "Guadalupe 9/23/2017 21:52",
-		"testOnlyRightPlayerCanPlay" : "Guadalupe 9/23/2017 18:19",
-		"testWhenAPlayerIsAtBoxWithMoonWalkEffect" : "Guadalupe 9/23/2017 19:42",
-		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 9/23/2017 18:17"
+		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 9/30/2017 10:22",
+		"testPlayerCanPlayHisTurn" : "Guadalupe 9/30/2017 10:19",
+		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 9/30/2017 10:28",
+		"testWhenAPlayerWinsGameEnds" : "Guadalupe 9/30/2017 10:23",
+		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 9/30/2017 10:12",
+		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 9/30/2017 10:12",
+		"testMoveBoxIsWorking" : "Guadalupe 9/30/2017 10:12",
+		"testWhenAPlayerIsAtBoxWithSpeedUpEffect" : "Guadalupe 9/30/2017 10:12",
+		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "Guadalupe 9/30/2017 10:12",
+		"testOnlyRightPlayerCanPlay" : "Guadalupe 9/30/2017 10:34",
+		"testWhenAPlayerIsAtBoxWithMoonWalkEffect" : "Guadalupe 9/30/2017 10:12",
+		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 9/30/2017 10:12"
 	},
 	"class" : { }
 }

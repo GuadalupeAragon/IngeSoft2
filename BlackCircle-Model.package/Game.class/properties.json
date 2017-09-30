@@ -11,8 +11,8 @@
 		"players",
 		"index",
 		"winner",
-		"diceCollection",
-		"endOfGame"
+		"dices",
+		"hasGameEnded"
 	],
 	"name" : "Game",
 	"type" : "normal"

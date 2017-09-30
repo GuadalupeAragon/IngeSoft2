@@ -1,4 +1,4 @@
 initialization
 intializeGenerating: effects
-	source := effects copyFrom: 1 to: effects size.
+	source := effects.	
 	index := 1

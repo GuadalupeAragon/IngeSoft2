@@ -12,7 +12,7 @@ testWhenAPlayerIsAtBoxWithSpeedUpEffect
 					SpeedUpEffect new}).
 	game := Game
 		withBoard: board
-		withLaps: 1
+		requiredLapsToWin: 1
 		involving:
 			{playerOne.
 			playerTwo}

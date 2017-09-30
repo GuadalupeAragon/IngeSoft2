@@ -1,17 +1,14 @@
 {
 	"instance" : {
-		"previousPositionOf:" : "Guadalupe 9/23/2017 21:47",
-		"initializeWith:withSource:" : "Guadalupe 9/27/2017 20:54",
+		"previousPositionOf:" : "Guadalupe 9/30/2017 10:55",
+		"initializeWith:withSource:" : "Guadalupe 9/30/2017 11:23",
 		"updatePositionOf:at:" : "Guadalupe 9/27/2017 21:10",
 		"effectOfBox:" : "Guadalupe 9/23/2017 18:04",
-		"updatePositionOf:withBox:" : "Guadalupe 9/27/2017 20:54",
 		"lapLength" : "MarianoFacundo 9/6/2017 21:39",
-		"positionOf:" : "Guadalupe 9/23/2017 21:41",
-		"initializeWith:" : "Guadalupe 9/23/2017 16:55"
+		"positionOf:" : "Guadalupe 9/30/2017 10:56"
 	},
 	"class" : {
-		"with:source:" : "Guadalupe 9/23/2017 17:10",
-		"assertIsPositive:" : "Guadalupe 9/16/2017 11:56",
-		"with:" : "Guadalupe 9/23/2017 17:10"
+		"assertIsPositive:" : "Guadalupe 9/30/2017 10:01",
+		"with:source:" : "Guadalupe 9/23/2017 17:10"
 	}
 }

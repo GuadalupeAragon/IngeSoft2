@@ -5,7 +5,7 @@ testMoveBoxIsWorking
 	board := Board with: 4 source: (FixedEffectSequence generating: {NoEffect new}).
 	game := Game
 		withBoard: board
-		withLaps: 3
+		requiredLapsToWin: 3
 		involving: {player}
 		withDices: {(Dice with: 6 source: (FixedSequence generating: #(2)))}.
 	game playTurn: player.

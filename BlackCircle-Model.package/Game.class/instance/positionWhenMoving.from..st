@@ -1,4 +1,4 @@
-testing
+move
 positionWhenMoving: aNumberOfBoxes from: position
 	| numberOfBox numberOfLap |
 	numberOfBox := position currentBox+ aNumberOfBoxes - 1.
@@ -6,4 +6,4 @@ positionWhenMoving: aNumberOfBoxes from: position
 	
 	numberOfLap := position currentLap * board lapLength + numberOfBox quo: board lapLength.
 	numberOfBox := numberOfBox rem: board lapLength.
-	^ Position inLap: numberOfLap inBox: numberOfBox + 1
+	^ Position currentlyIn: numberOfLap at: numberOfBox + 1

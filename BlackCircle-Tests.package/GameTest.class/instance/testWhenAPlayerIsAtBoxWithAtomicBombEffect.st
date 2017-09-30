@@ -13,7 +13,7 @@ testWhenAPlayerIsAtBoxWithAtomicBombEffect
 					AtomicBombEffect new}).
 	game := Game
 		withBoard: board
-		withLaps: 3
+		requiredLapsToWin: 3
 		involving:
 			{playerOne.
 			playerTwo.

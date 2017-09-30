@@ -1,19 +1,18 @@
 tests
-testUntilWinning
+testGameIsPlayedUntilOnePlayerWins
 	| playerOne playerTwo board game |
 	playerOne := Player named: 'Tom'.
 	playerTwo := Player named: 'Lucy'.
-	board := Board with: 10 source:
-			(FixedEffectSequence
-				generating:
-					{NoEffect new}).
+	board := Board with: 10 source: (FixedEffectSequence generating: {NoEffect new}).
 	game := Game
 		withBoard: board
-		withLaps: 2
+		requiredLapsToWin: 2
 		involving:
 			{playerOne.
 			playerTwo}
 		withDices: {(Dice with: 6 source: (FixedSequence generating: #(1 3 6 8)))}.
+	self assert: game winner equals: nil.
+	self deny: game hasEnded.	
 	self assert: (board positionOf: playerOne) currentBox equals: 0.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
 	self assert: (board positionOf: playerTwo) currentBox equals: 0.

@@ -2,4 +2,4 @@ playing
 assertWinner: aPlayer
 	laps <= (board positionOf: aPlayer) currentLap
 		ifTrue: [ winner := aPlayer.
-			endOfGame := true ]
+			hasGameEnded := true ]
