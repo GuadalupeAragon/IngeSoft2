@@ -1,9 +1,9 @@
 {
 	"instance" : {
 		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 9/30/2017 10:12",
-		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 9/30/2017 10:22",
+		"testGameIsPlayedUntilOnePlayerWins" : "MarianoFacundo 10/1/2017 15:32",
 		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 9/30/2017 10:28",
-		"testCreateRandomizedEffectBoard" : "MarianoFacundo 10/1/2017 15:07",
+		"testCreateRandomizedEffectBoard" : "MarianoFacundo 10/1/2017 15:28",
 		"testWhenAPlayerWinsGameEnds" : "Guadalupe 9/30/2017 10:23",
 		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 9/30/2017 10:12",
 		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 9/30/2017 10:12",
