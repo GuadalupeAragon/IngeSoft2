@@ -1,17 +1,18 @@
 {
 	"instance" : {
+		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 9/30/2017 10:12",
 		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 9/30/2017 10:22",
-		"testPlayerCanPlayHisTurn" : "Guadalupe 9/30/2017 10:19",
 		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 9/30/2017 10:28",
+		"testCreateRandomizedEffectBoard" : "MarianoFacundo 10/1/2017 14:28",
 		"testWhenAPlayerWinsGameEnds" : "Guadalupe 9/30/2017 10:23",
 		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 9/30/2017 10:12",
 		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 9/30/2017 10:12",
 		"testMoveBoxIsWorking" : "Guadalupe 9/30/2017 10:12",
 		"testWhenAPlayerIsAtBoxWithSpeedUpEffect" : "Guadalupe 9/30/2017 10:12",
-		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "Guadalupe 9/30/2017 10:12",
 		"testOnlyRightPlayerCanPlay" : "Guadalupe 9/30/2017 10:34",
+		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "Guadalupe 9/30/2017 10:12",
 		"testWhenAPlayerIsAtBoxWithMoonWalkEffect" : "Guadalupe 9/30/2017 10:12",
-		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 9/30/2017 10:12"
+		"testPlayerCanPlayHisTurn" : "Guadalupe 9/30/2017 10:19"
 	},
 	"class" : { }
 }
