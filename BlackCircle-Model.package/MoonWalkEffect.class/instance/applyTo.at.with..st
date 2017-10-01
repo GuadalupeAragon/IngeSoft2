@@ -1,3 +1,6 @@
 applying
 applyTo: aPlayer at: game with: board
-	game movePlayersExcept: aPlayer backward: (source nextInt: board lapLength)
+	| playersCopy  |
+	playersCopy := game players reject: [ :player | player = aPlayer ].
+	playersCopy
+		do: [ :player | game move: player forward: (source nextInt: board lapLength) negated ]

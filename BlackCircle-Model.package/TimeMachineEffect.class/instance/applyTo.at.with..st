@@ -1,3 +1,5 @@
 applying
 applyTo: aPlayer at: game with: board
-	game moveToPreviousPosition: aPlayer
+	| position |
+	position := board previousPositionOf: aPlayer.
+	board updatePositionOf: aPlayer at: position
