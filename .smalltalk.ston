@@ -1,0 +1,18 @@
+SmalltalkCISpec {
+   #loading : [
+     SCIMetacelloLoadSpec {
+       #baseline : 'BlackCircle',
+       #directory : 'IngeSoft2',
+       #load : [ 'Development' ],
+       #platforms : [ #pharo ]
+     } 
+   ], 
+   #testing : {
+     #coverage : {
+       #packages : [ 'BlackCircle-Model' ]
+     },
+     #include : {  
+       #packages : [ 'BlackCircle.*' ]
+     }    
+   }
+ }
