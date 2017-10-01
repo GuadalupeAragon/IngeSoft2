@@ -15,7 +15,7 @@ testGameIsPlayedUntilOnePlayerWins
 					WormholeEffect new.
 					NoEffect new.
 					SpeedUpEffect new.
-					MoonWalkEffect new.
+					(MoonWalkEffect source: (FixedSequence generating: #(2))).
 					NoEffect new}).
 	game := Game
 		withBoard: board
@@ -43,13 +43,15 @@ testGameIsPlayedUntilOnePlayerWins
 	game playTurn: playerTwo.
 	self assert: (board positionOf: playerTwo) currentBox equals: 1.
 	self assert: (board positionOf: playerTwo) currentLap equals: 0.
-	game playTurn: playerOne
-	"self assert: (board positionOf: playerOne) currentBox equals: 8.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
-	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: 8.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0.
 	game playTurn: playerOne.
+	self assert: (board positionOf: playerOne) currentBox equals: 0.
+	self assert: (board positionOf: playerOne) currentLap equals: 1.
+	self assert: (board positionOf: playerTwo) currentBox equals: 0.
+	self assert: (board positionOf: playerTwo) currentLap equals: 0.
+	game playTurn: playerTwo.
+	self assert: (board positionOf: playerTwo) currentBox equals: 0.
+	self assert: (board positionOf: playerTwo) currentLap equals: 0.
+	"game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 4.
 	self assert: (board positionOf: playerOne) currentLap equals: 1.
 	game playTurn: playerTwo.

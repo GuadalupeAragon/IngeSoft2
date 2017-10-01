@@ -1,12 +1,13 @@
 tests
 testCreateRandomizedEffectBoard
-	| player board game |
+	| player board game dice |
 	player := Player named: 'Facu'.
 	board := Board with: 20 source: RandomEffectGenerator new.
+	dice := Dice with: 6 source: Random new.
 	game := Game
 		withBoard: board
-		requiredLapsToWin: 1
+		requiredLapsToWin: 3
 		involving: {player}
-		withDices: {(Dice with: 26 source: (FixedSequence generating: #(5 26)))}.
-	game playTurn: player.
-	self assert: (board positionOf: player) currentBox > 0.
+		withDices: {dice}.
+	[ game hasEnded = false ] whileTrue: [ game playTurn: player ].
+	self assert: game winner equals: player
