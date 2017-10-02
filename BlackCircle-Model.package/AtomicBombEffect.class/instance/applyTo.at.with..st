@@ -1,3 +1,7 @@
 applying
 applyTo: aPlayer at: game with: board
-	game movePlayersToBeginning
+	game players
+		do: [ :player | 
+			board
+				updatePositionOf: player
+				at: ( Position currentlyIn: 0 at: 0 ) ]
