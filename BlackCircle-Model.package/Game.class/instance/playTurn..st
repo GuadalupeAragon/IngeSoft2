@@ -1,11 +1,10 @@
 playing
 playTurn: aPlayer
-	| sumOfDices |
+	| sumOfDices nextPosition |
 	self assertIsTheTurnOf: aPlayer.
 	sumOfDices := dices sumNumbers: [ :dice | dice throw ].
-	self move: aPlayer forward: sumOfDices.
-	self assertApplyEffectTo: aPlayer.
-	
+	nextPosition := self positionWhenMoving: sumOfDices from: (board positionOf: aPlayer).
+	self assertApplyEffectTo: aPlayer atPosition: nextPosition .
 	self assertWinner: aPlayer.
 	players size = index
 		ifTrue: [ index := 1 ]
