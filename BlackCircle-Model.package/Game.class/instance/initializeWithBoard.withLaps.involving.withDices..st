@@ -1,7 +1,7 @@
 initialization
 initializeWithBoard: aBoard withLaps: numberOfLaps involving: thePlayers withDices: theDices
 	board := aBoard.
-	laps := numberOfLaps.
+	totalLaps := numberOfLaps.
 	players := thePlayers.	
 	index := 1.
 	hasGameEnded := false.

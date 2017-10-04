@@ -1,16 +1,16 @@
 initialization
 nextEffect
-	| gotRandomValue |
-	gotRandomValue := Random new nextInt: 100.
-	(gotRandomValue > 0 & gotRandomValue) <= 40
+	| randomValue |
+	randomValue := Random new nextInt: 100.
+	(randomValue > 0 & randomValue) <= 40
 		ifTrue: [ ^ NoEffect new ].
-	(gotRandomValue > 40 & gotRandomValue) <= 42
+	(randomValue > 40 & randomValue) <= 42
 		ifTrue: [ ^ AtomicBombEffect new ].
-	(gotRandomValue > 42 & gotRandomValue) <= 57
+	(randomValue > 42 & randomValue) <= 57
 		ifTrue: [ ^ WormholeEffect new ].
-	(gotRandomValue > 57 & gotRandomValue) <= 62
+	(randomValue > 57 & randomValue) <= 62
 		ifTrue: [ ^ MoonWalkEffect source: Random new ].
-	(gotRandomValue > 62 & gotRandomValue) <= 77
+	(randomValue > 62 & randomValue) <= 77
 		ifTrue: [ ^ SpeedUpEffect new ].
-	(gotRandomValue > 77 & gotRandomValue) <= 100
+	(randomValue > 77 & randomValue) <= 100
 		ifTrue: [ ^ TimeMachineEffect new ]
