@@ -1,3 +1,3 @@
 playing
-applyEffect: anEffect to: aPlayer atPosition: position
+applyEffect: anEffect to: aPlayer at: position
 	anEffect applyTo: aPlayer at: self atPosition: position

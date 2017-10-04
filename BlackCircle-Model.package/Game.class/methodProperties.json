@@ -2,16 +2,16 @@
 	"instance" : {
 		"playTurn:" : "Guadalupe 10/4/2017 19:42",
 		"hasEnded" : "Guadalupe 9/30/2017 10:10",
-		"assertEffecrIsApplyableTo:at:" : "Guadalupe 10/4/2017 19:16",
+		"assertEffecrIsApplyableTo:at:" : "Guadalupe 10/4/2017 19:55",
 		"ifWon:do:" : "Guadalupe 10/4/2017 19:33",
 		"winner" : "Guadalupe 9/17/2017 15:22",
 		"initializeWithBoard:withLaps:involving:withDices:" : "Guadalupe 10/4/2017 19:16",
 		"assertIsTheTurnOf:" : "Guadalupe 9/16/2017 12:04",
-		"applyEffect:to:atPosition:" : "Guadalupe 10/2/2017 12:00",
 		"players" : "Guadalupe 10/1/2017 20:19",
 		"positionWhenMoving:from:" : "Guadalupe 9/30/2017 10:18",
 		"moveAndApplyEffectsTo:" : "Guadalupe 10/4/2017 19:42",
 		"changeCurrentPlayer" : "Guadalupe 10/4/2017 19:37",
+		"applyEffect:to:at:" : "Guadalupe 10/4/2017 19:55",
 		"throwDices" : "Guadalupe 10/4/2017 19:06",
 		"board" : "Guadalupe 10/2/2017 11:57"
 	},
