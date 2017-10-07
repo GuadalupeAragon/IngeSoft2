@@ -5,4 +5,4 @@ moveAndApplyEffectsTo: aPlayer
 	nextPosition := self
 		positionWhenMoving: roll
 		from: (board positionOf: aPlayer).
-	self assertEffecrIsApplyableTo: aPlayer at: nextPosition
+	self assertEffectIsApplyableTo: aPlayer at: nextPosition

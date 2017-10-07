@@ -1,8 +1,8 @@
 tests
 testGameIsPlayedUntilOnePlayerWins
 	| playerOne playerTwo board game |
-	playerOne := Player named: 'Facu'.
-	playerTwo := Player named: 'Guada'.
+	playerOne := self playerFacu.
+	playerTwo := self playerGuada.
 	board := Board
 		with: 7
 		source:
@@ -21,7 +21,8 @@ testGameIsPlayedUntilOnePlayerWins
 		involving:
 			{playerOne.
 			playerTwo}
-		withDices: {(Dice with: 6 source: (FixedSequence generating: #(4 1 2 2 3 3 3 2)))}.
+		withDices:
+			{(Dice with: 6 source: (FixedSequence generating: #(4 1 2 2 3 3 3 2)))}.
 	self assert: game winner equals: nil.
 	self deny: game hasEnded.
 	self assert: (board positionOf: playerOne) currentBox equals: 0.

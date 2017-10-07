@@ -1,8 +1,8 @@
 tests
 testPlayerCanPlayHisTurn
 	| player board game |
-	player := Player named: 'Hijitus'.
-	board := Board with: 600 source: (FixedEffectSequence generating: {NoEffect new}).
+	player := self playerHijitus.
+	board := self boardWith4BoxesAndNoEffect.
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 3

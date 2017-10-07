@@ -1,8 +1,8 @@
 tests
 testWhenAPlayerWinsGameEnds
 	| player board game |
-	player := Player named: 'Facu'.
-	board := Board with: 4 source: (FixedEffectSequence generating: {NoEffect new}).
+	player := self playerFacu.
+	board := self boardWith4BoxesAndNoEffect.
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
@@ -11,4 +11,4 @@ testWhenAPlayerWinsGameEnds
 	game playTurn: player.
 	self assert: (board positionOf: player) currentBox equals: 1.
 	self assert: game winner equals: player.
-	self assert: game hasEnded 
+	self assert: game hasEnded

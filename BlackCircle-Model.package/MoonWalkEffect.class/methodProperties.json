@@ -1,7 +1,8 @@
 {
 	"instance" : {
 		"initializeSource:" : "Guadalupe 9/23/2017 19:09",
-		"applyTo:at:atPosition:" : "Guadalupe 10/2/2017 12:00"
+		"applyEffectToPlayersAt:exceptFor:" : "Guadalupe 10/7/2017 17:35",
+		"applyTo:at:atPosition:" : "Guadalupe 10/7/2017 17:34"
 	},
 	"class" : {
 		"source:" : "Guadalupe 9/23/2017 19:09"

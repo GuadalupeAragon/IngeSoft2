@@ -1,7 +1,7 @@
 tests
-testCreateRandomizedEffectBoard
-	| player board game  |
-	player := Player named: 'Facu'.
+testWhenUsingBoardWithRandomEffectGeneratorAPlayerWins
+	| player board game |
+	player := self playerFacu.
 	board := Board with: 20 source: RandomEffectGenerator new.
 	game := Game
 		withBoard: board

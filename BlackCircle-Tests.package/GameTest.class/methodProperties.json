@@ -1,18 +1,22 @@
 {
 	"instance" : {
-		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 9/30/2017 10:12",
-		"testGameIsPlayedUntilOnePlayerWins" : "MarianoFacundo 10/2/2017 12:32",
-		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 9/30/2017 10:28",
-		"testCreateRandomizedEffectBoard" : "MarianoFacundo 10/1/2017 17:12",
-		"testWhenAPlayerWinsGameEnds" : "Guadalupe 9/30/2017 10:23",
-		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 9/30/2017 10:12",
-		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 9/30/2017 10:12",
-		"testMoveBoxIsWorking" : "Guadalupe 9/30/2017 10:12",
-		"testWhenAPlayerIsAtBoxWithSpeedUpEffect" : "Guadalupe 9/30/2017 10:12",
-		"testOnlyRightPlayerCanPlay" : "Guadalupe 9/30/2017 10:34",
-		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "MarianoFacundo 10/2/2017 12:28",
-		"testWhenAPlayerIsAtBoxWithMoonWalkEffect" : "Guadalupe 9/30/2017 10:12",
-		"testPlayerCanPlayHisTurn" : "Guadalupe 9/30/2017 10:19"
+		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 10/7/2017 17:11",
+		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 10/7/2017 17:47",
+		"testWhenAPlayerIsAtBoxWithSpeedUpEffect" : "Guadalupe 10/7/2017 17:10",
+		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "Guadalupe 10/7/2017 17:10",
+		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 10/7/2017 17:13",
+		"testWhenUsingBoardWithRandomEffectGeneratorAPlayerWins" : "Guadalupe 10/7/2017 17:52",
+		"testWhenAPlayerWinsGameEnds" : "Guadalupe 10/7/2017 17:14",
+		"playerHijitus" : "Guadalupe 10/7/2017 17:11",
+		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 10/7/2017 17:10",
+		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 10/7/2017 17:12",
+		"testMoveBoxIsWorking" : "Guadalupe 10/7/2017 17:14",
+		"testOnlyRightPlayerCanPlay" : "Guadalupe 10/7/2017 17:11",
+		"playerFacu" : "Guadalupe 10/7/2017 17:08",
+		"boardWith4BoxesAndNoEffect" : "Guadalupe 10/7/2017 17:13",
+		"playerGuada" : "Guadalupe 10/7/2017 17:10",
+		"testWhenAPlayerIsAtBoxWithMoonWalkEffect" : "Guadalupe 10/7/2017 17:12",
+		"testPlayerCanPlayHisTurn" : "Guadalupe 10/7/2017 17:46"
 	},
 	"class" : { }
 }
