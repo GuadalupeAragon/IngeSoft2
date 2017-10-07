@@ -1,5 +1,5 @@
 tests
-testWhenUsingBoardWithRandomEffectGeneratorAPlayerWins
+testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds
 	| player board game |
 	player := self playerFacu.
 	board := Board with: 20 source: RandomEffectGenerator new.
