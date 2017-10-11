@@ -1,8 +1,8 @@
 tests
 testWhenAPlayerIsAtBoxWithWormholeEffect
 	| board playerOne game playerTwo |
-	playerOne := Player named: 'Guada'.
-	playerTwo := Player named: 'Facu'.
+	playerOne := self playerGuada.
+	playerTwo := self playerFacu.
 	board := Board
 		with: 20
 		source:

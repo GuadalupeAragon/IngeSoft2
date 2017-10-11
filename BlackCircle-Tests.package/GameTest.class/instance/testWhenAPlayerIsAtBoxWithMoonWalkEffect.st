@@ -1,9 +1,9 @@
 tests
 testWhenAPlayerIsAtBoxWithMoonWalkEffect
 	| board playerOne game playerTwo playerThree |
-	playerOne := Player named: 'Guada'.
-	playerTwo := Player named: 'Facu'.
-	playerThree := Player named: 'Hijitus'.
+	playerOne := self playerGuada.
+	playerTwo := self playerFacu.
+	playerThree := self playerHijitus.
 	board := Board
 		with: 20
 		source:

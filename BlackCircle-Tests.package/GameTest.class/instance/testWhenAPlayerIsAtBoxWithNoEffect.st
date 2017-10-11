@@ -1,14 +1,9 @@
 tests
 testWhenAPlayerIsAtBoxWithNoEffect
 	| board playerOne game playerTwo |
-	playerOne := Player named: 'Guada'.
-	playerTwo := Player named: 'Facu'.
-	board := Board
-		with: 2
-		source:
-			(FixedEffectSequence
-				generating:
-					{NoEffect new}).
+	playerOne := self playerGuada.
+	playerTwo := self playerFacu.
+	board := self boardWith4BoxesAndNoEffect.
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1

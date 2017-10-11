@@ -7,12 +7,12 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"board",
-		"laps",
 		"players",
 		"index",
 		"winner",
 		"dices",
-		"hasGameEnded"
+		"hasGameEnded",
+		"totalLaps"
 	],
 	"name" : "Game",
 	"type" : "normal"
