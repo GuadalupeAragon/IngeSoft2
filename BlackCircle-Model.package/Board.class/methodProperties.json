@@ -1,11 +1,12 @@
 {
 	"instance" : {
-		"previousPositionOf:" : "Guadalupe 9/30/2017 10:55",
+		"previousPositionOf:" : "Guadalupe 10/11/2017 21:24",
 		"initializeWith:withSource:" : "Guadalupe 9/30/2017 11:23",
-		"updatePositionOf:at:" : "Guadalupe 10/7/2017 18:49",
+		"updatePositionOf:at:" : "Guadalupe 10/11/2017 21:13",
 		"effectOfBox:" : "Guadalupe 9/23/2017 18:04",
+		"historyOf:" : "Guadalupe 10/11/2017 21:09",
 		"lapLength" : "MarianoFacundo 9/6/2017 21:39",
-		"positionOf:" : "Guadalupe 9/30/2017 10:56"
+		"positionOf:" : "Guadalupe 10/11/2017 21:09"
 	},
 	"class" : {
 		"assertIsPositive:" : "Guadalupe 9/30/2017 10:01",
