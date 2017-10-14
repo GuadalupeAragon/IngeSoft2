@@ -1,0 +1,3 @@
+accessing
+nextCard
+	^ self nextElement

@@ -1,4 +1,4 @@
-initialization
-intializeGenerating: numbers
-	source := numbers.
+private
+intializeGenerating: aSource
+	source := aSource.
 	index := 1

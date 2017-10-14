@@ -16,7 +16,13 @@ testWhenAPlayerIsAtBoxWithWormholeEffect
 		involving:
 			{playerOne.
 			playerTwo}
-		withDices: {(Dice with: 6 source: (FixedSequence generating: #(1 2)))}.
+		sourceOfCards:
+			(FixedCardSequence
+				generating:
+					{
+					Permanent new.
+					Snapshot new.})
+		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(1 2)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
