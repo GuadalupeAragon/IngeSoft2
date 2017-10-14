@@ -21,8 +21,11 @@ testGameIsPlayedUntilOnePlayerWins
 		involving:
 			{playerOne.
 			playerTwo}
-		withDices:
-			{(Dice with: 6 source: (FixedSequence generating: #(4 1 2 2 3 3 3 2)))}.
+		sourceOfCards: (FixedCardSequence
+				generating:
+					{Snapshot new.
+					Permanent new})
+		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(4 1 2 2 3 3 3 2)))}.
 	self assert: game winner equals: nil.
 	self deny: game hasEnded.
 	self assert: (board positionOf: playerOne) currentBox equals: 0.

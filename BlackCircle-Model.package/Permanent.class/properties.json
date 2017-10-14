@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "FixedSequence",
-	"category" : "BlackCircle-Tests",
+	"super" : "Card",
+	"category" : "BlackCircle-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "FixedEffectSequence",
+	"name" : "Permanent",
 	"type" : "normal"
 }

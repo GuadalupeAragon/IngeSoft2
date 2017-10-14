@@ -1,3 +1,3 @@
 initialize
-generating: numbers
-	^ self new intializeGenerating: numbers
+generating: elements
+	^ self new intializeGenerating: elements

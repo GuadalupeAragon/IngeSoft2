@@ -10,7 +10,7 @@ testWhenAPlayerIsAtBoxWithMoonWalkEffect
 			(FixedEffectSequence
 				generating:
 					{NoEffect new.
-					(MoonWalkEffect source: (FixedSequence generating: #(2)))}).
+					(MoonWalkEffect source: (FixedNumberSequence generating: #(2)))}).
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
@@ -18,7 +18,11 @@ testWhenAPlayerIsAtBoxWithMoonWalkEffect
 			{playerOne.
 			playerTwo.
 			playerThree}
-		withDices: {(Dice with: 6 source: (FixedSequence generating: #(1 3 5 1)))}.
+		sourceOfCards:(FixedCardSequence
+				generating:
+					{Snapshot new.
+					Permanent new}) 
+		withDices:  {(Dice with: 6 source: (FixedNumberSequence generating: #(1 3 5 1)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.

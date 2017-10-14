@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "FixedSequence",
-	"category" : "BlackCircle-Tests",
+	"super" : "Object",
+	"category" : "BlackCircle-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "FixedEffectSequence",
+	"name" : "RandomCardGenerator",
 	"type" : "normal"
 }

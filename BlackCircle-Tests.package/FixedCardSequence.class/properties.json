@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "FixedEffectSequence",
+	"name" : "FixedCardSequence",
 	"type" : "normal"
 }
