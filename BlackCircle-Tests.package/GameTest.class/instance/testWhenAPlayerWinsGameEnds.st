@@ -7,12 +7,13 @@ testWhenAPlayerWinsGameEnds
 		withBoard: board
 		requiredLapsToWin: 1
 		involving: {player}
-		sourceOfCards:(FixedCardSequence
+		sourceOfCards:
+			(FixedCardSequence
 				generating:
 					{Snapshot new.
 					Permanent new})
 		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(5)))}.
-	game playTurn: player.
+	game playTurn: player with: nil.
 	self assert: (board positionOf: player) currentBox equals: 1.
 	self assert: game winner equals: player.
 	self assert: game hasEnded

@@ -7,7 +7,11 @@ testMoveBoxIsWorking
 		withBoard: board
 		requiredLapsToWin: 3
 		involving: {player}
-		sourceOfCards: (FixedCardSequence generating: {Snapshot new. Permanent new})
+		sourceOfCards:
+			(FixedCardSequence
+				generating:
+					{Snapshot new.
+					Permanent new})
 		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(2)))}.
-	game playTurn: player.
+	game playTurn: player with: nil.
 	self assert: (board positionOf: player) currentBox equals: 2

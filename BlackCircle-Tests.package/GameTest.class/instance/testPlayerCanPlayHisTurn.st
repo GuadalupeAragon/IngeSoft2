@@ -15,5 +15,5 @@ testPlayerCanPlayHisTurn
 		withDices:
 			{(Dice with: 6 source: Random new).
 			(Dice with: 4 source: Random new)}.
-	game playTurn: player.
+	game playTurn: player with: nil.
 	self assert: (board positionOf: player) currentBox > 0

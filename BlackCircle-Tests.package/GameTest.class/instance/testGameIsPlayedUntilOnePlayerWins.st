@@ -21,11 +21,15 @@ testGameIsPlayedUntilOnePlayerWins
 		involving:
 			{playerOne.
 			playerTwo}
-		sourceOfCards: (FixedCardSequence
+		sourceOfCards:
+			(FixedCardSequence
 				generating:
 					{Snapshot new.
 					Permanent new})
-		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(4 1 2 2 3 3 3 2)))}.
+		withDices:
+			{(Dice
+				with: 6
+				source: (FixedNumberSequence generating: #(4 1 2 2 3 3 3 2)))}.
 	self assert: game winner equals: nil.
 	self deny: game hasEnded.
 	self assert: (board positionOf: playerOne) currentBox equals: 0.
@@ -33,30 +37,30 @@ testGameIsPlayedUntilOnePlayerWins
 	self assert: (board positionOf: playerTwo) currentBox equals: 0.
 	self assert: (board positionOf: playerTwo) currentLap equals: 0.
 	self deny: game hasEnded.
-	game playTurn: playerOne.
+	game playTurn: playerOne with: nil.
 	self assert: (board positionOf: playerOne) currentBox equals: 4.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
-	game playTurn: playerTwo.
+	game playTurn: playerTwo with: nil.
 	self assert: (board positionOf: playerTwo) currentBox equals: 1.
 	self assert: (board positionOf: playerTwo) currentLap equals: 0.
-	game playTurn: playerOne.
+	game playTurn: playerOne with: nil.
 	self assert: (board positionOf: playerOne) currentBox equals: 0.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
 	self assert: (board positionOf: playerTwo) currentBox equals: 0.
 	self assert: (board positionOf: playerTwo) currentLap equals: 0.
-	game playTurn: playerTwo.
+	game playTurn: playerTwo with: nil.
 	self assert: (board positionOf: playerTwo) currentBox equals: 6.
 	self assert: (board positionOf: playerTwo) currentLap equals: 0.
-	game playTurn: playerOne.
+	game playTurn: playerOne with: nil.
 	self assert: (board positionOf: playerOne) currentBox equals: 4.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
-	game playTurn: playerTwo.
+	game playTurn: playerTwo with: nil.
 	self assert: (board positionOf: playerTwo) currentBox equals: 6.
 	self assert: (board positionOf: playerTwo) currentLap equals: 1.
-	game playTurn: playerOne.
+	game playTurn: playerOne with: nil.
 	self assert: (board positionOf: playerOne) currentBox equals: 7.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
-	game playTurn: playerTwo.
+	game playTurn: playerTwo with: nil.
 	self assert: (board positionOf: playerTwo) currentBox equals: 1.
 	self assert: (board positionOf: playerTwo) currentLap equals: 2.
 	self assert: game hasEnded.

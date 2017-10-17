@@ -1,4 +1,4 @@
 playing
 assertIsTheTurnOf: aPlayer
-	aPlayer = (players at: index)
+	index = (players indexOfKey: aPlayer)
 		ifFalse: [ PlayTurnException signal: 'not your turn' ]
