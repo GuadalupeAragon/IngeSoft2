@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Permanent",
+	"category" : "BlackCircle-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DecreasePositionCard",
+	"type" : "normal"
+}

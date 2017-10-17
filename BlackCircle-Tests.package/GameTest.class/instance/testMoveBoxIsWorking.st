@@ -1,6 +1,6 @@
 tests
 testMoveBoxIsWorking
-	| player board game |
+	| player board game increasePositonCard |
 	player := self playerHijitus.
 	board := self boardWith4BoxesAndNoEffect.
 	game := Game
@@ -11,7 +11,7 @@ testMoveBoxIsWorking
 			(FixedCardSequence
 				generating:
 					{Snapshot new.
-					Permanent new})
+					increasePositonCard := IncreasePositionCard new})
 		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(2)))}.
-	game playTurn: player with: nil.
-	self assert: (board positionOf: player) currentBox equals: 2
+	game playTurn: player with: increasePositonCard.
+	self assert: (board positionOf: player) currentBox equals: 3

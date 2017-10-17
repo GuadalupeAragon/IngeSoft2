@@ -1,6 +1,6 @@
 tests
 testWhenAPlayerIsAtBoxWithAtomicBombEffect
-	| board playerOne game playerTwo playerThree |
+	| board playerOne game playerTwo playerThree decreasePositionCard |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	playerThree := self playerHijitus.
@@ -22,9 +22,9 @@ testWhenAPlayerIsAtBoxWithAtomicBombEffect
 			(FixedCardSequence
 				generating:
 					{Snapshot new.
-					Permanent new})
-		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(1 3 4)))}.
-	game playTurn: playerOne with: nil.
+					decreasePositionCard:= DecreasePositionCard new})
+		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(3 3 4)))}.
+	game playTurn: playerOne with: decreasePositionCard.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	game playTurn: playerTwo with: nil.
 	self assert: (board positionOf: playerTwo) currentBox equals: 3.
