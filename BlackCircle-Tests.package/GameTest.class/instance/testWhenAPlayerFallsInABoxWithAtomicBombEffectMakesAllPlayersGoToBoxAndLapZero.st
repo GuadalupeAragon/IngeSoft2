@@ -1,12 +1,12 @@
 tests
-testWhenAPlayerIsAtBoxWithAtomicBombEffect
+testWhenAPlayerFallsInABoxWithAtomicBombEffectMakesAllPlayersGoToBoxAndLapZero
 	| board playerOne game playerTwo playerThree decreasePositionCard |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	playerThree := self playerHijitus.
 	board := Board
 		with: 20
-		source:
+		boxesGeneratingEffectsFrom:
 			(FixedEffectSequence
 				generating:
 					{NoEffect new.
@@ -18,17 +18,17 @@ testWhenAPlayerIsAtBoxWithAtomicBombEffect
 			{playerOne.
 			playerTwo.
 			playerThree}
-		sourceOfCards:
+		generatingCardsFrom:
 			(FixedCardSequence
 				generating:
 					{Snapshot new.
-					decreasePositionCard:= DecreasePositionCard new})
-		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(3 3 4)))}.
-	game playTurn: playerOne with: decreasePositionCard.
-	self assert: (board positionOf: playerOne) currentBox equals: 1.
-	game playTurn: playerTwo with: nil.
+					(decreasePositionCard := DecreasePositionCard new)})
+		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 3 4)))}.
+	game playTurn: playerOne.
+	self assert: (board positionOf: playerOne) currentBox equals: 3.
+	game playTurn: playerTwo.
 	self assert: (board positionOf: playerTwo) currentBox equals: 3.
-	game playTurn: playerThree with: nil.
+	game playTurn: playerThree.
 	self assert: (board positionOf: playerThree) currentBox equals: 0.
 	self assert: (board positionOf: playerOne) currentBox equals: 0.
 	self assert: (board positionOf: playerTwo) currentBox equals: 0

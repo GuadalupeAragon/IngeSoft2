@@ -1,4 +1,4 @@
 private
 intializeGenerating: aSource
 	source := aSource.
-	index := 1
+	currentElementIndex := 1

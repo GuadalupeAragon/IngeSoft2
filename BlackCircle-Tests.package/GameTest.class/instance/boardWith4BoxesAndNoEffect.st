@@ -1,5 +1,3 @@
 tests
 boardWith4BoxesAndNoEffect
-	^ Board
-		with: 4
-		source: (FixedEffectSequence generating: {NoEffect new})
+	^ Board with: 4 boxesGeneratingEffectsFrom: (FixedEffectSequence generating: {NoEffect new})

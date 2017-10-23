@@ -3,7 +3,7 @@ testCreateBoardWithFixedEffectSequence
 	| board |
 	board := Board
 		with: 20
-		source:
+		boxesGeneratingEffectsFrom:
 			(FixedEffectSequence
 				generating:
 					{NoEffect new.

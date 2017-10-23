@@ -1,7 +1,7 @@
 playing
-playTurn: aPlayer with: aPermanetCard
+playTurn: aPlayer
 	self assertIsTheTurnOf: aPlayer.
-	self moveAndApplyEffectsTo: aPlayer playing: aPermanetCard .
+	self moveAndApplyEffectsTo: aPlayer .
 	self
 		ifWon: aPlayer
 		do: [ winner := aPlayer.

@@ -1,24 +1,23 @@
 {
 	"instance" : {
-		"board" : "Guadalupe 10/2/2017 11:57",
+		"playTurn:" : "Guadalupe 10/23/2017 11:12",
 		"hasEnded" : "Guadalupe 9/30/2017 10:10",
 		"winner" : "Guadalupe 9/17/2017 15:22",
 		"ifWon:do:" : "Guadalupe 10/4/2017 19:33",
 		"player:" : "Guadalupe 10/17/2017 09:49",
 		"positionWhenMoving:from:" : "Guadalupe 9/30/2017 10:18",
-		"assertIsTheTurnOf:" : "Guadalupe 10/17/2017 10:09",
+		"assertIsTheTurnOf:" : "Guadalupe 10/23/2017 11:14",
 		"players" : "Guadalupe 10/1/2017 20:19",
 		"playerPickCardsFrom:" : "Guadalupe 10/17/2017 14:23",
-		"throwDices" : "Guadalupe 10/4/2017 19:06",
-		"changeCurrentPlayer" : "Guadalupe 10/4/2017 19:37",
+		"moveAndApplyEffectsTo:" : "Guadalupe 10/23/2017 11:12",
+		"changeCurrentPlayer" : "Guadalupe 10/23/2017 11:14",
 		"applyEffect:to:at:" : "Guadalupe 10/4/2017 19:55",
-		"playTurn:with:" : "Guadalupe 10/17/2017 09:45",
-		"applyCard:to:at:" : "Guadalupe 10/17/2017 09:48",
-		"initializeWithBoard:withLaps:involving:sourceOfCards:withDices:" : "Guadalupe 10/17/2017 10:09",
+		"initializeWithBoard:withLaps:involving:generatingCardsFrom:withDices:" : "Guadalupe 10/23/2017 12:37",
+		"throwDices" : "Guadalupe 10/4/2017 19:06",
 		"assertEffectIsApplyableTo:at:" : "Guadalupe 10/7/2017 17:53",
-		"moveAndApplyEffectsTo:playing:" : "Guadalupe 10/17/2017 09:43"
+		"board" : "Guadalupe 10/2/2017 11:57"
 	},
 	"class" : {
-		"withBoard:requiredLapsToWin:involving:sourceOfCards:withDices:" : "Guadalupe 10/14/2017 16:43"
+		"withBoard:requiredLapsToWin:involving:generatingCardsFrom:withDices:" : "Guadalupe 10/23/2017 12:37"
 	}
 }

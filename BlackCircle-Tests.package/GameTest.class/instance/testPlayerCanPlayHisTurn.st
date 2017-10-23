@@ -7,13 +7,13 @@ testPlayerCanPlayHisTurn
 		withBoard: board
 		requiredLapsToWin: 3
 		involving: {player}
-		sourceOfCards:
+		generatingCardsFrom:
 			(FixedCardSequence
 				generating:
 					{Permanent new.
 					Permanent new})
 		withDices:
-			{(Dice with: 6 source: Random new).
-			(Dice with: 4 source: Random new)}.
-	game playTurn: player with: nil.
+			{(Dice with: 6 facesGeneratingNumbersFrom: Random new).
+			(Dice with: 4 facesGeneratingNumbersFrom: Random new)}.
+	game playTurn: player.
 	self assert: (board positionOf: player) currentBox > 0

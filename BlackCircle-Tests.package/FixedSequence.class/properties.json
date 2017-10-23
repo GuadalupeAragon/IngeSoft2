@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"source",
-		"index"
+		"currentElementIndex"
 	],
 	"name" : "FixedSequence",
 	"type" : "normal"

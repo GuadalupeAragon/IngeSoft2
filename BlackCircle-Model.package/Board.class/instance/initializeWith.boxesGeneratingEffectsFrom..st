@@ -1,5 +1,5 @@
 initialization
-initializeWith: aNumberOfBoxes withSource: aSource
+initializeWith: aNumberOfBoxes boxesGeneratingEffectsFrom: aSource
 	numberBoxes := aNumberOfBoxes.
 	playersHistory := Dictionary new.
 	boxesEffects := OrderedCollection new.

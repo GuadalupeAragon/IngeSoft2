@@ -7,8 +7,8 @@ testAdvancingLapLengthIncreasesLapInOne
 		withBoard: board
 		requiredLapsToWin: 3
 		involving: {player}
-		sourceOfCards: RandomCardGenerator new
-		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(4 2)))}.
-	game playTurn: player with: nil.
-	game playTurn: player with: nil.
+		generatingCardsFrom: RandomCardGenerator new
+		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 2)))}.
+	game playTurn: player.
+	game playTurn: player.
 	self assert: (board positionOf: player) currentLap equals: 1

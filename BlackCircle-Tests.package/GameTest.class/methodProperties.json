@@ -1,22 +1,22 @@
 {
 	"instance" : {
-		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 10/17/2017 09:23",
-		"testWhenAPlayerIsAtBoxWithNoEffect" : "Guadalupe 10/17/2017 09:23",
-		"testWhenAPlayerIsAtBoxWithSpeedUpEffect" : "Guadalupe 10/17/2017 09:23",
-		"testWhenAPlayerIsAtBoxWithTimeMachineEffect" : "Guadalupe 10/17/2017 14:27",
-		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 10/17/2017 09:23",
-		"testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds" : "Guadalupe 10/17/2017 09:23",
-		"testWhenAPlayerWinsGameEnds" : "Guadalupe 10/17/2017 12:23",
+		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 10/23/2017 12:39",
+		"testWhenAPlayerFallsInABoxWithTimeMachineEffectMovesToPreviousPosition" : "Guadalupe 10/23/2017 12:40",
+		"testWhenAPlayerFallsInABoxWithSpeedUpEffectMovesFoward4Boxes" : "Guadalupe 10/23/2017 12:40",
+		"testWhenAPlayerFallsInABoxWithWormholeEffectMovesBackwards4Boxes" : "Guadalupe 10/23/2017 12:40",
+		"testWhenAPlayerFallsInABoxWithMoonWalkEffectMakesAllPlayersButHimMoveBackwardNBoxes" : "Guadalupe 10/23/2017 12:39",
+		"testAdvancingLapLengthIncreasesLapInOne" : "Guadalupe 10/23/2017 12:37",
+		"testWhenAPlayerFallsInABoxWithAtomicBombEffectMakesAllPlayersGoToBoxAndLapZero" : "Guadalupe 10/23/2017 12:39",
+		"testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds" : "Guadalupe 10/23/2017 12:40",
+		"testWhenAPlayerWinsGameEnds" : "Guadalupe 10/23/2017 12:37",
 		"playerHijitus" : "Guadalupe 10/7/2017 17:11",
-		"testWhenAPlayerIsAtBoxWithWormholeEffect" : "Guadalupe 10/17/2017 14:25",
-		"testWhenAPlayerIsAtBoxWithAtomicBombEffect" : "Guadalupe 10/17/2017 11:59",
-		"testMoveBoxIsWorking" : "Guadalupe 10/17/2017 12:00",
-		"testOnlyRightPlayerCanPlay" : "Guadalupe 10/17/2017 09:23",
+		"testMoveBoxIsWorking" : "Guadalupe 10/23/2017 12:37",
+		"testOnlyRightPlayerCanPlay" : "Guadalupe 10/23/2017 12:39",
 		"playerFacu" : "Guadalupe 10/7/2017 17:08",
-		"boardWith4BoxesAndNoEffect" : "Guadalupe 10/14/2017 16:58",
+		"boardWith4BoxesAndNoEffect" : "Guadalupe 10/23/2017 12:39",
 		"playerGuada" : "Guadalupe 10/7/2017 17:10",
-		"testWhenAPlayerIsAtBoxWithMoonWalkEffect" : "Guadalupe 10/17/2017 09:23",
-		"testPlayerCanPlayHisTurn" : "Guadalupe 10/17/2017 09:23"
+		"testWhenAPlayerFallsInABoxWithNoEffectNothingHappenToPlayers" : "Guadalupe 10/23/2017 12:37",
+		"testPlayerCanPlayHisTurn" : "Guadalupe 10/23/2017 12:37"
 	},
 	"class" : { }
 }

@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"initializeWith:source:" : "Guadalupe 9/16/2017 16:29",
+		"initializeWith:facesGeneratingNumbersFrom:" : "Guadalupe 10/23/2017 12:34",
 		"throw" : "Guadalupe 9/27/2017 21:20"
 	},
 	"class" : {
 		"assertIsPositive:" : "Guadalupe 9/17/2017 15:02",
-		"with:source:" : "Guadalupe 9/17/2017 15:02"
+		"with:facesGeneratingNumbersFrom:" : "Guadalupe 10/23/2017 12:35"
 	}
 }
