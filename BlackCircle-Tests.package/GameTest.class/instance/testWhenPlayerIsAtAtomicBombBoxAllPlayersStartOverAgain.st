@@ -1,6 +1,6 @@
 tests
-testWhenAPlayerFallsInABoxWithAtomicBombEffectMakesAllPlayersGoToBoxAndLapZero
-	| board playerOne game playerTwo playerThree decreasePositionCard |
+testWhenPlayerIsAtAtomicBombBoxAllPlayersStartOverAgain
+	| board playerOne game playerTwo playerThree  |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	playerThree := self playerHijitus.
@@ -22,7 +22,7 @@ testWhenAPlayerFallsInABoxWithAtomicBombEffectMakesAllPlayersGoToBoxAndLapZero
 			(FixedCardSequence
 				generating:
 					{Snapshot new.
-					(decreasePositionCard := DecreasePositionCard new)})
+					( OverloadCard new)})
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 3 4)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 3.

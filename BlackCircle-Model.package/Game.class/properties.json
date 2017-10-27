@@ -12,7 +12,8 @@
 		"dices",
 		"hasGameEnded",
 		"totalLaps",
-		"currentPlayerIndex"
+		"currentPlayerIndex",
+		"cardSource"
 	],
 	"name" : "Game",
 	"type" : "normal"

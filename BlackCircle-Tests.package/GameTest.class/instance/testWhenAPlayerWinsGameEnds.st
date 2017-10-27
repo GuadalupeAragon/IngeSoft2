@@ -1,6 +1,6 @@
 tests
 testWhenAPlayerWinsGameEnds
-	| player board game decreasePositonCard |
+	| player board game |
 	player := self playerFacu.
 	board := self boardWith4BoxesAndNoEffect.
 	game := Game
@@ -11,7 +11,7 @@ testWhenAPlayerWinsGameEnds
 			(FixedCardSequence
 				generating:
 					{Snapshot new.
-					(decreasePositonCard := DecreasePositionCard new)})
+					( OverloadCard new)})
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 5)))}.
 	game playTurn: player.
 	self assert: (board positionOf: player) currentBox equals: 3.

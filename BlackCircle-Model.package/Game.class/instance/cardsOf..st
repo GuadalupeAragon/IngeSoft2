@@ -1,3 +1,3 @@
 accessing
-player: aPlayer
+cardsOf: aPlayer
 	^ players at:aPlayer

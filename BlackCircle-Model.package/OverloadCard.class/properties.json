@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "IncreasePositionCard",
+	"name" : "OverloadCard",
 	"type" : "normal"
 }

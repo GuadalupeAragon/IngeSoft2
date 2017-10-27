@@ -1,5 +1,5 @@
 tests
-testWhenAPlayerFallsInABoxWithNoEffectNothingHappenToPlayers
+testWhenPlayerIsAtNoEffectBoxNothingHappenToPlayers
 	| board playerOne game playerTwo |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.

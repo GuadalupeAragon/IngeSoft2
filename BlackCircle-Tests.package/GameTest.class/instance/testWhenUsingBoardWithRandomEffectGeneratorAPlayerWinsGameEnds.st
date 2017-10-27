@@ -13,5 +13,5 @@ testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds
 					{Snapshot new.
 					Permanent new})
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: Random new)}.
-	[ game hasEnded = false ] whileTrue: [ game playTurn: player ].
+	[ game hasEnded ] whileFalse: [ game playTurn: player ].
 	self assert: game winner equals: player

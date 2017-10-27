@@ -1,6 +1,6 @@
 tests
-testWhenAPlayerFallsInABoxWithWormholeEffectMovesBackwards4Boxes
-	| board playerOne game playerTwo increasePositionCard decreasePositionCard |
+testWhenPlayerIsAtWormholeBoxMovesBackwards4Boxes
+	| board playerOne game playerTwo   |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	board := Board
@@ -19,8 +19,8 @@ testWhenAPlayerFallsInABoxWithWormholeEffectMovesBackwards4Boxes
 		generatingCardsFrom:
 			(FixedCardSequence
 				generating:
-					{(increasePositionCard := IncreasePositionCard new).
-					(decreasePositionCard := DecreasePositionCard new)})
+					{SpeedCard new.
+					OverloadCard new})
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 1 2 1)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 3.

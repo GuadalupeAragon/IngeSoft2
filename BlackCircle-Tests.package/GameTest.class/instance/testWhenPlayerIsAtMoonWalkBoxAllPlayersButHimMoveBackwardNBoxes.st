@@ -1,5 +1,5 @@
 tests
-testWhenAPlayerFallsInABoxWithMoonWalkEffectMakesAllPlayersButHimMoveBackwardNBoxes
+testWhenPlayerIsAtMoonWalkBoxAllPlayersButHimMoveBackwardNBoxes
 	| board playerOne game playerTwo playerThree |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
