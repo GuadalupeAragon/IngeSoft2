@@ -13,7 +13,8 @@
 		"hasGameEnded",
 		"totalLaps",
 		"currentPlayerIndex",
-		"cardSource"
+		"cardSource",
+		"cardsToBeApply"
 	],
 	"name" : "Game",
 	"type" : "normal"
