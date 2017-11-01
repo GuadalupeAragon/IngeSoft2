@@ -1,5 +1,3 @@
 applying
 applyCard
-	^1
-
-	
+^1
