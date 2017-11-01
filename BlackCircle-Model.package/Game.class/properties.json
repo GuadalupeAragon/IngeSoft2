@@ -14,7 +14,8 @@
 		"totalLaps",
 		"currentPlayerIndex",
 		"cardSource",
-		"cardsToBeApply"
+		"cardsToBeApply",
+		"currentAmortiguation"
 	],
 	"name" : "Game",
 	"type" : "normal"
