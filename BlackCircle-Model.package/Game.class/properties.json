@@ -8,11 +8,13 @@
 	"instvars" : [
 		"board",
 		"players",
-		"index",
 		"winner",
 		"dices",
 		"hasGameEnded",
-		"totalLaps"
+		"totalLaps",
+		"currentPlayerIndex",
+		"cardSource",
+		"cardsToBeApply"
 	],
 	"name" : "Game",
 	"type" : "normal"

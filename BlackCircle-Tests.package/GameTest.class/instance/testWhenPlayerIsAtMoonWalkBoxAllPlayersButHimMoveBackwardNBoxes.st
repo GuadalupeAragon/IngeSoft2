@@ -1,12 +1,12 @@
 tests
-testWhenAPlayerIsAtBoxWithMoonWalkEffect
+testWhenPlayerIsAtMoonWalkBoxAllPlayersButHimMoveBackwardNBoxes
 	| board playerOne game playerTwo playerThree |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	playerThree := self playerHijitus.
 	board := Board
 		with: 20
-		source:
+		boxesGeneratingEffectsFrom:
 			(FixedEffectSequence
 				generating:
 					{NoEffect new.
@@ -18,11 +18,12 @@ testWhenAPlayerIsAtBoxWithMoonWalkEffect
 			{playerOne.
 			playerTwo.
 			playerThree}
-		sourceOfCards:(FixedCardSequence
+		generatingCardsFrom:
+			(FixedCardSequence
 				generating:
 					{Snapshot new.
-					Permanent new}) 
-		withDices:  {(Dice with: 6 source: (FixedNumberSequence generating: #(1 3 5 1)))}.
+					Permanent new})
+		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 3 5 1)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.

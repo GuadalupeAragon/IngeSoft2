@@ -5,7 +5,7 @@ testGameIsPlayedUntilOnePlayerWins
 	playerTwo := self playerGuada.
 	board := Board
 		with: 7
-		source:
+		boxesGeneratingEffectsFrom:
 			(FixedEffectSequence
 				generating:
 					{NoEffect new.
@@ -21,11 +21,12 @@ testGameIsPlayedUntilOnePlayerWins
 		involving:
 			{playerOne.
 			playerTwo}
-		sourceOfCards: (FixedCardSequence
+		generatingCardsFrom:
+			(FixedCardSequence
 				generating:
 					{Snapshot new.
 					Permanent new})
-		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(4 1 2 2 3 3 3 2)))}.
+		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 1 2 2 3 3 3 2)))}.
 	self assert: game winner equals: nil.
 	self deny: game hasEnded.
 	self assert: (board positionOf: playerOne) currentBox equals: 0.

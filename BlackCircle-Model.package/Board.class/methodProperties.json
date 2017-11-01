@@ -1,7 +1,7 @@
 {
 	"instance" : {
+		"initializeWith:boxesGeneratingEffectsFrom:" : "Guadalupe 10/23/2017 12:33",
 		"previousPositionOf:" : "Guadalupe 10/11/2017 21:24",
-		"initializeWith:withSource:" : "Guadalupe 9/30/2017 11:23",
 		"updatePositionOf:at:" : "Guadalupe 10/11/2017 21:13",
 		"effectOfBox:" : "Guadalupe 9/23/2017 18:04",
 		"historyOf:" : "Guadalupe 10/11/2017 21:09",
@@ -10,6 +10,6 @@
 	},
 	"class" : {
 		"assertIsPositive:" : "Guadalupe 9/30/2017 10:01",
-		"with:source:" : "Guadalupe 9/23/2017 17:10"
+		"with:boxesGeneratingEffectsFrom:" : "Guadalupe 10/23/2017 12:33"
 	}
 }

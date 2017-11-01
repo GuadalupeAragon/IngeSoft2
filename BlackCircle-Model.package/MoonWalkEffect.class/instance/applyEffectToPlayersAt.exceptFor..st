@@ -1,9 +1,8 @@
 applying
 applyEffectToPlayersAt: game exceptFor: aPlayer
-	| nextPosition |
+	| nextPosition nBoxes |
+	nBoxes := (source nextInt: game board lapLength).
 	(game players reject: [ :player | player = aPlayer ])
-		do: [ :player | 
-			nextPosition := game
-				positionWhenMoving: (source nextInt: game board lapLength) negated
-				from: (game board positionOf: player).
+		keysDo: [ :player | 
+			nextPosition := game positionWhenMoving: nBoxes negated from: (game board positionOf: player).
 			game board updatePositionOf: player at: nextPosition ]

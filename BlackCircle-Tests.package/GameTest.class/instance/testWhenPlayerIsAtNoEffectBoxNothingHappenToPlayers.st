@@ -1,5 +1,5 @@
 tests
-testWhenAPlayerIsAtBoxWithNoEffect
+testWhenPlayerIsAtNoEffectBoxNothingHappenToPlayers
 	| board playerOne game playerTwo |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
@@ -10,11 +10,12 @@ testWhenAPlayerIsAtBoxWithNoEffect
 		involving:
 			{playerOne.
 			playerTwo}
-		sourceOfCards: (FixedCardSequence
+		generatingCardsFrom:
+			(FixedCardSequence
 				generating:
 					{Snapshot new.
 					Permanent new})
-		withDices: {(Dice with: 6 source: (FixedNumberSequence generating: #(1)))}.
+		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.

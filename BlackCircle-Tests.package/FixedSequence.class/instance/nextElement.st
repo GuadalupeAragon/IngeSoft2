@@ -1,9 +1,9 @@
 private
 nextElement
 	| nextElement |
-	nextElement := source at: index.
-	source size = index
-		ifTrue: [ index := 1 ]
-		ifFalse: [ index := index + 1 ].
+	nextElement := source at: currentElementIndex.
+	source size = currentElementIndex
+		ifTrue: [ currentElementIndex := 1 ]
+		ifFalse: [ currentElementIndex := currentElementIndex + 1 ].
 	^ nextElement
 	
