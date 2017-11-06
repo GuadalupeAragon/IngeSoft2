@@ -1,0 +1,3 @@
+applying
+applyCardAt: anObject
+	self subclassResponsibility

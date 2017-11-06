@@ -1,3 +1,3 @@
-calculator
-forNumber: anInteger at: aGame 
-	^ (anInteger * (aGame currentAmortiguation))
+AmortiguationCardTakesPlace
+forNumber: anInteger at: aGame
+	^ anInteger quo: aGame currentAmortiguation

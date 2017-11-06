@@ -1,4 +1,4 @@
 applying
 applyCard
-	^ -2
+^ -2
 	
