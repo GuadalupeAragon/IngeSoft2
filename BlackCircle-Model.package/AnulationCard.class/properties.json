@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Instant",
+	"category" : "BlackCircle-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "AnulationCard",
+	"type" : "normal"
+}

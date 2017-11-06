@@ -24,7 +24,8 @@
 		"testWhenPlayerIsAtNoEffectBoxNothingHappenToPlayers" : "Guadalupe 10/27/2017 09:21",
 		"testWhenPlayerIsAtSpeedUpBoxAndAmortiguationIsSetMovesFoward2Boxes" : "MarianoFacundo 11/1/2017 17:00",
 		"testWhenPlayerIsAtAtomicBombBoxAllPlayersStartOverAgain" : "Guadalupe 10/27/2017 09:26",
-		"playerFacu" : "Guadalupe 10/7/2017 17:08"
+		"playerFacu" : "Guadalupe 10/7/2017 17:08",
+		"testWhenPlayerUsesAnulationCardItAnulatesLastCard" : "MarianoFacundo 11/6/2017 14:34"
 	},
 	"class" : { }
 }
