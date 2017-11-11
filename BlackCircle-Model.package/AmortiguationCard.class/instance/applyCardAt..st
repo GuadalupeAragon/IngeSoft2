@@ -1,4 +1,4 @@
 accessing
 applyCardAt: aGame
-	aGame amortiguateWithFactorOf: 2.
-	
+	aGame amortiguateWithFactorOf: 2
+
