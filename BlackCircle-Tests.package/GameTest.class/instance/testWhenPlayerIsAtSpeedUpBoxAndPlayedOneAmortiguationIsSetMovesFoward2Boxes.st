@@ -11,7 +11,7 @@ testWhenPlayerIsAtSpeedUpBoxAndPlayedOneAmortiguationIsSetMovesFoward2Boxes
 					{NoEffect new.
 					SpeedUpEffect new}).
 	amortiguationCard := self amortiguationCard.
-	deck := self deckWith: amortiguationCard. 
+	deck := self deckWith: amortiguationCard.
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
@@ -23,7 +23,7 @@ testWhenPlayerIsAtSpeedUpBoxAndPlayedOneAmortiguationIsSetMovesFoward2Boxes
 			{(Dice
 				with: 6
 				facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 2)))}.
-	game player: playerOne appliesCard: amortiguationCard.
+	game apply: amortiguationCard playedBy: playerOne.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.

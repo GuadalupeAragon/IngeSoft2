@@ -21,5 +21,5 @@ testPlayerCantPlayCardWhenItIsNotHisTurn
 				facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4)))}.
 	game playTurn: playerFacu.
 	self
-		should: [ game player: playerFacu appliesCard: overloadCard to: playerGuada ]
+		should: [ game apply: overloadCard playedBy: playerFacu to: playerGuada ]
 		raise: PlayTurnException

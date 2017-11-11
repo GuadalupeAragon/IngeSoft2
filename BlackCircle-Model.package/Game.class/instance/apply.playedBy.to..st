@@ -1,6 +1,6 @@
 playing
-player: aPlayer appliesCard: aCard
+apply: aCard playedBy: aPlayer to: otherPlayer
 	self assertIsTheTurnOf: aPlayer.
 	(self cardsOf: aPlayer) remove: aCard ifAbsent: [ PlayTurnException signal: 'you do not have that card' ].
-	aCard applyCardAt: self.
 	
+	(cardsToBeApplied at: otherPlayer) addFirst: aCard
