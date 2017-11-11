@@ -12,4 +12,5 @@ initializeWithBoard: aBoard withLaps: numberOfLaps involving: thePlayers generat
 	currentPlayerIndex := 1.
 	hasGameEnded := false.
 	dices := theDices.
+	gameHistory := OrderedCollection new.
 	currentAmortiguation := 1

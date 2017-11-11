@@ -1,4 +1,4 @@
-test-Card
+test-PermanentCard
 testPlayerCantUseCardHeDoesntHave
 	| playerGuada board game overloadCard deck |
 	playerGuada := self playerGuada.

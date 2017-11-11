@@ -1,4 +1,4 @@
-test-Card
+test-PermanentCard
 testWhenPlayerUsesSpeedCardToOtherPlayerLastOneMovesOneMoreBox
 	| playerGuada board game playerFacu speedCard deck |
 	playerGuada := self playerGuada.

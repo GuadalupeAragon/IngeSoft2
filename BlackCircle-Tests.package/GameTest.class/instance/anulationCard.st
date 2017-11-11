@@ -1,3 +1,3 @@
-test-Card
+test-PermanentCard
 anulationCard
 	^ AnulationCard new

@@ -1,4 +1,4 @@
-test-Card
+test-PermanentCard
 testPlayerCantPlayCardWhenItIsNotHisTurn
 	| playerGuada board game overloadCard playerFacu deck |
 	playerFacu := self playerFacu.
