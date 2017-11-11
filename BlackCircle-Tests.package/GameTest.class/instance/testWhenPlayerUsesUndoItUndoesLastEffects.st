@@ -1,23 +1,22 @@
-tests
+test-Card
 testWhenPlayerUsesUndoItUndoesLastEffects
-	| playerGuada board game playerFacu overloadCard undoCard |
+	| playerGuada board game playerFacu overloadCard undoCard deck |
 	playerGuada := self playerGuada.
 	playerFacu := self playerFacu.
 	board := Board with: 20 boxesGeneratingEffectsFrom: (FixedEffectSequence generating: {NoEffect new}).
 	overloadCard := OverloadCard new.
 	undoCard := UndoCard new.
+	deck := Deck generatingCardsFrom: (FixedCardSequence generating: {overloadCard}).
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 3
 		involving:
 			{playerGuada.
 			playerFacu}
-		generatingCardsFrom: (FixedCardSequence generating: {overloadCard})
+		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 1)))}.
 	game player: playerGuada appliesCard: overloadCard to: playerGuada.
-	
 	game player: playerGuada appliesCard: undoCard toBoard: board.
-	
 	game playTurn: playerGuada.
 	self assert: (board positionOf: playerGuada) currentBox equals: 2.
 	self assert: (board positionOf: playerGuada) currentLap equals: 0.

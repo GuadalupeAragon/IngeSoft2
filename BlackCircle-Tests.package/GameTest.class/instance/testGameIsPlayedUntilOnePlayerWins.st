@@ -22,10 +22,7 @@ testGameIsPlayedUntilOnePlayerWins
 			{playerOne.
 			playerTwo}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					Permanent new})
+			self deckRandomCardGenerator
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 1 2 2 3 3 3 2)))}.
 	self assert: game winner equals: nil.
 	self deny: game hasEnded.

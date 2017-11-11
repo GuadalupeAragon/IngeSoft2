@@ -1,3 +1,0 @@
-accessing
-applyCard
-	^0

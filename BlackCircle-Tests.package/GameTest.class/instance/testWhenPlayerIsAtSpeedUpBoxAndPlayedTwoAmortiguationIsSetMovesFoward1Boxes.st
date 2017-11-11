@@ -1,6 +1,6 @@
-tests
+test-Card
 testWhenPlayerIsAtSpeedUpBoxAndPlayedTwoAmortiguationIsSetMovesFoward1Boxes
-	| board playerOne game playerTwo amortiguationCard |
+	| board playerOne game playerTwo amortiguationCard deck |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	board := Board
@@ -10,24 +10,22 @@ testWhenPlayerIsAtSpeedUpBoxAndPlayedTwoAmortiguationIsSetMovesFoward1Boxes
 				generating:
 					{NoEffect new.
 					SpeedUpEffect new}).
-	amortiguationCard := AmortiguationCard new.
+	amortiguationCard := self amortiguationCard.
+	deck := self deckWith: amortiguationCard. 
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
 		involving:
 			{playerOne.
 			playerTwo}
-		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{amortiguationCard.
-					OverloadCard new})
+		generatingCardsFrom:deck
+			
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 2)))}.
-	game player: playerOne appliesCard: amortiguationCard to: nil.
+	game player: playerOne appliesCard: amortiguationCard.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.
-	game player: playerTwo appliesCard: amortiguationCard to: nil.
+	game player: playerTwo appliesCard: amortiguationCard.
 	game playTurn: playerTwo.
 	self assert: (board positionOf: playerTwo) currentBox equals: 3.
 	self assert: (board positionOf: playerTwo) currentLap equals: 0.

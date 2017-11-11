@@ -1,21 +1,19 @@
-tests
+test-effects
 testWhenPlayerIsAtNoEffectBoxNothingHappenToPlayers
-	| board playerOne game playerTwo |
+	| board playerOne game playerTwo  |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	board := self boardWith4BoxesAndNoEffect.
+		
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
 		involving:
 			{playerOne.
 			playerTwo}
-		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					Permanent new})
+		generatingCardsFrom: self deckWithOverloadCard 
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1)))}.
+	
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.

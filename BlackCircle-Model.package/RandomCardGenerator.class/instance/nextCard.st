@@ -1,8 +1,15 @@
 accessing
 nextCard
-	| randomValue card |
-	randomValue := Random new nextInt: 2.
+	
+	"randomValue := Random new nextInt: 2.
 	randomValue = 1
-		ifTrue: [ card := Snapshot new ]
-		ifFalse: [ card := Permanent new ].
-	^ card
+		ifTrue: [ card := InstantCard new ]
+		ifFalse: [ card := PermanentCard new ]."
+	cards := OrderedCollection new
+		add: AnulationCard new;
+		add: UndoCard new;
+		add: AmortiguationCard new;
+		add: OverloadCard new;
+		add: SpeedCard new;
+		yourself.
+	^ cards atRandom

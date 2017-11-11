@@ -1,16 +1,14 @@
 initialization
-initializeWithBoard: aBoard withLaps: numberOfLaps involving: thePlayers generatingCardsFrom: aSource withDices: theDices
+initializeWithBoard: aBoard withLaps: numberOfLaps involving: thePlayers generatingCardsFrom: aDeck withDices: theDices
 	board := aBoard.
 	totalLaps := numberOfLaps.
-	cardSource := aSource.
+	deck := aDeck.
 	players := OrderedDictionary new.
-	cardsToBeApply := Dictionary new.
+	cardsToBeApplied := Dictionary new.
 	thePlayers
 		do: [ :player | 
-			players
-				at: player
-				ifAbsentPut: [ OrderedCollection with: self playerPickACard with: self playerPickACard ].
-			cardsToBeApply at: player ifAbsentPut: [ OrderedCollection new ] ].
+			players at: player put: (OrderedCollection with: deck playerPickACard with: deck playerPickACard).
+			cardsToBeApplied at: player put: OrderedCollection new ].
 	currentPlayerIndex := 1.
 	hasGameEnded := false.
 	dices := theDices.

@@ -1,8 +1,8 @@
 playing
 moveAndApplyEffectsTo: aPlayer
 	| nextPosition roll numberOfBoxes |
-	numberOfBoxes := (cardsToBeApply at: aPlayer)
-		sumNumbers: [ :card | card applyCard ].
+	numberOfBoxes := (cardsToBeApplied at: aPlayer)
+		sumNumbers: [ :card | card numberOfBoxesToMove ].
 	roll := self throwDices.
 	nextPosition := self
 		positionWhenMoving: roll + numberOfBoxes

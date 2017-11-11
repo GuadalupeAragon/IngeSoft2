@@ -1,6 +1,6 @@
-tests
+test-effects
 testWhenPlayerIsAtMoonWalkBoxAllPlayersButHimMoveBackwardNBoxes
-	| board playerOne game playerTwo playerThree |
+	| board playerOne game playerTwo playerThree deck |
 	playerOne := self playerGuada.
 	playerTwo := self playerFacu.
 	playerThree := self playerHijitus.
@@ -11,6 +11,7 @@ testWhenPlayerIsAtMoonWalkBoxAllPlayersButHimMoveBackwardNBoxes
 				generating:
 					{NoEffect new.
 					(MoonWalkEffect source: (FixedNumberSequence generating: #(2)))}).
+	deck := self deckWithOverloadCard.
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
@@ -18,12 +19,11 @@ testWhenPlayerIsAtMoonWalkBoxAllPlayersButHimMoveBackwardNBoxes
 			{playerOne.
 			playerTwo.
 			playerThree}
-		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					Permanent new})
-		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 3 5 1)))}.
+		generatingCardsFrom: deck
+		withDices:
+			{(Dice
+				with: 6
+				facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 3 5 1)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
 	self assert: (board positionOf: playerOne) currentLap equals: 0.

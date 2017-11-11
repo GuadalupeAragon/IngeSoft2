@@ -8,10 +8,7 @@ testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds
 		requiredLapsToWin: 3
 		involving: {player}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					Permanent new})
+			self deckRandomCardGenerator
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: Random new)}.
 	[ game hasEnded ] whileFalse: [ game playTurn: player ].
 	self assert: game winner equals: player

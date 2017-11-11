@@ -1,4 +1,4 @@
-tests
+test-effects
 testWhenPlayerIsAtSpeedUpBoxMovesFoward4Boxes
 	| board playerOne game playerTwo |
 	playerOne := self playerGuada.
@@ -16,11 +16,7 @@ testWhenPlayerIsAtSpeedUpBoxMovesFoward4Boxes
 		involving:
 			{playerOne.
 			playerTwo}
-		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					Permanent new})
+		generatingCardsFrom:self deckWithOverloadCard 
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 2)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.
