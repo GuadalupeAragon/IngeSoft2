@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "Instant",
+	"name" : "PermanentCard",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 applying
-applyCard
+numberOfBoxesToMove
 	self subclassResponsibility

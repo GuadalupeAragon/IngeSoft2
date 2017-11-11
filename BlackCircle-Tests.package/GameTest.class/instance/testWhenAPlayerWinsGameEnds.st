@@ -8,10 +8,7 @@ testWhenAPlayerWinsGameEnds
 		requiredLapsToWin: 1
 		involving: {player}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					( OverloadCard new)})
+			self deckRandomCardGenerator
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 5)))}.
 	game playTurn: player.
 	self assert: (board positionOf: player) currentBox equals: 3.

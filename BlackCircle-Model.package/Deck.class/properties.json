@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Card",
+	"super" : "Object",
 	"category" : "BlackCircle-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "Permanent",
+	"instvars" : [
+		"cardSource"
+	],
+	"name" : "Deck",
 	"type" : "normal"
 }

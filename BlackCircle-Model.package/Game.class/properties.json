@@ -13,9 +13,9 @@
 		"hasGameEnded",
 		"totalLaps",
 		"currentPlayerIndex",
-		"cardSource",
-		"cardsToBeApply",
-		"currentAmortiguation"
+		"currentAmortiguation",
+		"cardsToBeApplied",
+		"deck"
 	],
 	"name" : "Game",
 	"type" : "normal"

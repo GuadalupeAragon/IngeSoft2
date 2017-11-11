@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Instant",
+	"super" : "InstantCard",
 	"category" : "BlackCircle-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

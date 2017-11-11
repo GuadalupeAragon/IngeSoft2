@@ -1,4 +1,4 @@
-tests
+test-effects
 testWhenPlayerIsAtTimeMachineBoxMovesToPreviousPosition
 	| board playerOne game playerTwo  |
 	playerOne := self playerGuada.
@@ -17,10 +17,7 @@ testWhenPlayerIsAtTimeMachineBoxMovesToPreviousPosition
 			{playerOne.
 			playerTwo}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{( SpeedCard new).
-					( OverloadCard new)})
+			self deckWithOverloadCard 
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 3 3 2)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 1.

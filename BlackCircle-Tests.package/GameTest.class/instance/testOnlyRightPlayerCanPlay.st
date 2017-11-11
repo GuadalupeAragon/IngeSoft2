@@ -11,10 +11,7 @@ testOnlyRightPlayerCanPlay
 			{playerOne.
 			playerTwo}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					Snapshot new})
+			self deckRandomCardGenerator
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: Random new)}.
 	game playTurn: playerOne.
 	game playTurn: playerTwo.

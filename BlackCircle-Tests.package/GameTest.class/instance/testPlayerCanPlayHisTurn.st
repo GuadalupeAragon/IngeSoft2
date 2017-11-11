@@ -8,10 +8,7 @@ testPlayerCanPlayHisTurn
 		requiredLapsToWin: 3
 		involving: {player}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Permanent new.
-					Permanent new})
+		self deckRandomCardGenerator
 		withDices:
 			{(Dice with: 6 facesGeneratingNumbersFrom: Random new).
 			(Dice with: 4 facesGeneratingNumbersFrom: Random new)}.

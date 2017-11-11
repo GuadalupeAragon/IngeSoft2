@@ -1,4 +1,4 @@
-tests
+test-effects
 testWhenPlayerIsAtAtomicBombBoxAllPlayersStartOverAgain
 	| board playerOne game playerTwo playerThree  |
 	playerOne := self playerGuada.
@@ -19,10 +19,7 @@ testWhenPlayerIsAtAtomicBombBoxAllPlayersStartOverAgain
 			playerTwo.
 			playerThree}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{Snapshot new.
-					( OverloadCard new)})
+			self deckWithOverloadCard 
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 3 4)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 3.

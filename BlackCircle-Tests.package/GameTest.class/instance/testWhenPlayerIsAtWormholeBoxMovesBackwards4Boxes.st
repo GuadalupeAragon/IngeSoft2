@@ -1,4 +1,4 @@
-tests
+test-effects
 testWhenPlayerIsAtWormholeBoxMovesBackwards4Boxes
 	| board playerOne game playerTwo   |
 	playerOne := self playerGuada.
@@ -17,10 +17,7 @@ testWhenPlayerIsAtWormholeBoxMovesBackwards4Boxes
 			{playerOne.
 			playerTwo}
 		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{SpeedCard new.
-					OverloadCard new})
+			self deckWithOverloadCard 
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 1 2 1)))}.
 	game playTurn: playerOne.
 	self assert: (board positionOf: playerOne) currentBox equals: 3.

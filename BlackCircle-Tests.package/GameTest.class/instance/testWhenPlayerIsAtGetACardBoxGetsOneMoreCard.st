@@ -1,6 +1,6 @@
-tests
+test-effects
 testWhenPlayerIsAtGetACardBoxGetsOneMoreCard
-	| board player game speedCard overloadCard |
+	| board player game speedCard overloadCard deck |
 	player := self playerGuada.
 	board := Board
 		with: 20
@@ -11,15 +11,15 @@ testWhenPlayerIsAtGetACardBoxGetsOneMoreCard
 					GetACardEffect new}).
 	speedCard := SpeedCard new.
 	overloadCard := OverloadCard new.
+	deck := Deck generatingCardsFrom: (FixedCardSequence
+				generating:
+					{speedCard.
+					overloadCard}).
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 1
 		involving: {player}
-		generatingCardsFrom:
-			(FixedCardSequence
-				generating:
-					{speedCard.
-					overloadCard})
+		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(2)))}.
 	game playTurn: player.
 	self assert: (board positionOf: player) currentBox equals: 2.

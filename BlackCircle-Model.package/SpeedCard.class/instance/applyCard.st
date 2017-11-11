@@ -1,3 +1,0 @@
-applying
-applyCard
-^1

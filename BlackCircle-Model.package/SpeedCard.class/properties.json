@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Permanent",
+	"super" : "PermanentCard",
 	"category" : "BlackCircle-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
