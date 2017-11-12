@@ -1,3 +1,5 @@
 accessing
 appliesAt: aGame removing: aPermanentCard
-	aPermanentCard removeOf: aGame 
+	| ownerOfTheCard |
+	ownerOfTheCard:=	aPermanentCard removeOf: aGame.
+	aGame gameHistory add: (OrderedCollection with:self with:aPermanentCard with: ownerOfTheCard)

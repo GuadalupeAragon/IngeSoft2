@@ -1,4 +1,4 @@
-test-Card
+test-InstantCard
 testPlayerCantPlayAnulationCardWhenNoPermanentCardWasPlayed
 	| playerGuada board game playerFacu overloadCardOne overloadCardTwo anulationCardOne anulationCardTwo deck |
 	playerGuada := self playerGuada.

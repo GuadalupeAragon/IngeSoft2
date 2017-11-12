@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"source"
+		"source",
+		"nBoxes"
 	],
 	"name" : "MoonWalkEffect",
 	"type" : "normal"

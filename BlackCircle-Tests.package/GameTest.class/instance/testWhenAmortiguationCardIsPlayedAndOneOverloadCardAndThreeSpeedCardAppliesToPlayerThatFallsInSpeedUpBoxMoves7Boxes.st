@@ -1,4 +1,4 @@
-test-Card
+test-PermanentCard
 testWhenAmortiguationCardIsPlayedAndOneOverloadCardAndThreeSpeedCardAppliesToPlayerThatFallsInSpeedUpBoxMoves7Boxes
 	| board playerOne game playerTwo amortiguationCard deck speedCard overloadCard speedCardOne speedCardTwo playerThree |
 	playerOne := self playerGuada.

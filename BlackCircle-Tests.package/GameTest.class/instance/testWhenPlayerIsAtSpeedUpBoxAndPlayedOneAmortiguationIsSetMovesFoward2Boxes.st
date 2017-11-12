@@ -1,4 +1,4 @@
-test-Card
+test-PermanentCard
 testWhenPlayerIsAtSpeedUpBoxAndPlayedOneAmortiguationIsSetMovesFoward2Boxes
 	| board playerOne game playerTwo amortiguationCard deck |
 	playerOne := self playerGuada.

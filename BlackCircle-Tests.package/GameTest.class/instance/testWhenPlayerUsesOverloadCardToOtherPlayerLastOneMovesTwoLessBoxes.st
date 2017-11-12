@@ -1,4 +1,4 @@
-test-Card
+test-PermanentCard
 testWhenPlayerUsesOverloadCardToOtherPlayerLastOneMovesTwoLessBoxes
 	| playerGuada board game playerFacu overloadCard deck |
 	playerGuada := self playerGuada.

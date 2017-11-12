@@ -1,4 +1,4 @@
-test-Card
+test-InstantCard
 testWhenPlayerUsesAnulationCardOverAmortiguationCardAnulatesIt
 	| playerGuada board game playerFacu overloadCardTwo anulationCardOne anulationCardTwo deck amortiguationCard |
 	playerGuada := self playerGuada.
