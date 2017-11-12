@@ -1,4 +1,4 @@
-playing
+appling
 apply: aCard playedBy: aPlayer toPermanetCard: aPermanentCard
 	self permanentCardPlayed
 		ifFalse: [ PlayTurnException signal: 'No Permanent card played.' ]

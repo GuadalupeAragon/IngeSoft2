@@ -1,5 +1,6 @@
 {
 	"instance" : {
+		"testWhenPlayerUsesPotentationCardReapplysLastEffectWhichWasMoonWalk" : "Guadalupe 11/12/2017 14:40",
 		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesWormholeEffect" : "Guadalupe 11/12/2017 10:57",
 		"playerGuada" : "Guadalupe 10/7/2017 17:10",
 		"testWhenPlayerIsAtNoEffectBoxNothingHappenToPlayers" : "Guadalupe 11/11/2017 09:46",
@@ -17,6 +18,7 @@
 		"testWhenPlayerUsesUndoCardUndoesLastEffectWhichIsWormhole" : "Guadalupe 11/12/2017 10:56",
 		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardAmortiguatingGameAgain" : "Guadalupe 11/12/2017 12:48",
 		"boardWith4BoxesAndNoEffect" : "Guadalupe 10/23/2017 12:39",
+		"potentationCard" : "Guadalupe 11/12/2017 14:27",
 		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardGivingItBackToPlayer" : "Guadalupe 11/12/2017 12:25",
 		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesAnulationCard" : "Guadalupe 11/12/2017 12:49",
 		"testWhenAmortiguationCardIsPlayedAndOneOverloadCardAndThreeSpeedCardAppliesToPlayerThatFallsInSpeedUpBoxMoves7Boxes" : "Guadalupe 11/11/2017 11:20",
@@ -27,12 +29,14 @@
 		"testOnlyRightPlayerCanPlay" : "Guadalupe 11/11/2017 09:54",
 		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesMoonWalkEffect" : "Guadalupe 11/12/2017 10:20",
 		"deckWith:" : "Guadalupe 11/11/2017 09:47",
-		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesAtomicBombEffect" : "Guadalupe 11/12/2017 10:19",
+		"testWhenPlayerUsesPotentationCardReapplysLastEffectWhichWasTimeMachine" : "Guadalupe 11/12/2017 14:31",
 		"overloadCard" : "Guadalupe 11/11/2017 09:48",
+		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesAtomicBombEffect" : "Guadalupe 11/12/2017 10:19",
 		"testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds" : "Guadalupe 11/11/2017 09:55",
 		"undoCard" : "Guadalupe 11/11/2017 15:33",
 		"testWhenPlayerIsAtSpeedUpBoxAndPlayedTwoAmortiguationIsSetMovesFoward1Boxes" : "Guadalupe 11/11/2017 11:20",
 		"deckWithOverloadCard" : "Guadalupe 11/11/2017 09:45",
+		"testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend" : "Guadalupe 11/12/2017 15:08",
 		"testWhenPlayerUsesAnulationCardOverOverloadCardAnulatesIt" : "Guadalupe 11/11/2017 12:40",
 		"testPlayerCantUseCardHeDoesntHave" : "Guadalupe 11/11/2017 11:19",
 		"testGameIsPlayedUntilOnePlayerWins" : "Guadalupe 11/11/2017 09:54",
@@ -44,12 +48,14 @@
 		"amortiguationCard" : "Guadalupe 11/11/2017 09:48",
 		"testPlayerCanPlayHisTurn" : "Guadalupe 11/11/2017 09:54",
 		"testPlayerCantPlayAnulationCardWhenNoPermanentCardWasPlayed" : "Guadalupe 11/11/2017 14:13",
+		"testWhenPlayerUsesPotentationCardReapplysLastEffectWhichWasSpeedUp" : "Guadalupe 11/12/2017 14:35",
+		"testWhenPlayerUsesUndoCardUndoesLastCardWhichWasAnulationCardUndoingOneSpeedUp" : "Guadalupe 11/12/2017 15:02",
 		"testMoveBoxIsWorking" : "Guadalupe 11/11/2017 09:54",
 		"testWhenPlayerUsesAnulationCardOverSpeedCardAnulatesIt" : "Guadalupe 11/11/2017 14:34",
 		"playerFacu" : "Guadalupe 10/7/2017 17:08",
 		"speedCard" : "Guadalupe 11/11/2017 09:50",
-		"testWhenPlayerUsesSpeedCardToOtherPlayerLastOneMovesOneMoreBox" : "Guadalupe 11/11/2017 11:19",
-		"testWhenPlayerIsAtSpeedUpBoxAndPlayedOneAmortiguationIsSetMovesFoward2Boxes" : "Guadalupe 11/11/2017 11:20"
+		"testWhenPlayerIsAtSpeedUpBoxAndPlayedOneAmortiguationIsSetMovesFoward2Boxes" : "Guadalupe 11/11/2017 11:20",
+		"testWhenPlayerUsesSpeedCardToOtherPlayerLastOneMovesOneMoreBox" : "Guadalupe 11/11/2017 11:19"
 	},
 	"class" : { }
 }
