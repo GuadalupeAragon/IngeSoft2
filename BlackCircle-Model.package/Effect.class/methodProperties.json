@@ -1,6 +1,8 @@
 {
 	"instance" : {
 		"numberOfBoxes:withAmortiguationAt:" : "Guadalupe 11/11/2017 10:25",
+		"redoAt:" : "Guadalupe 11/12/2017 10:49",
+		"playerToWhomEffectWasAppliedAt:" : "Guadalupe 11/12/2017 10:48",
 		"applyTo:at:atPosition:" : "Guadalupe 10/2/2017 12:00"
 	},
 	"class" : { }

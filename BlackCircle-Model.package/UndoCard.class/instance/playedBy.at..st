@@ -1,4 +1,4 @@
 appling
 playedBy: aPlayer at: aGame
-	aGame lastEffectOrInstantCardPlay undoAt: aGame.
-	aGame gameHistory add: self.
+	(aGame lastEffectOrInstantCardPlay at: 1) undoAt: aGame.
+	aGame gameHistory add: (OrderedCollection with:self with: aPlayer )

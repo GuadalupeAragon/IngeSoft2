@@ -1,7 +1,7 @@
 applying
 undoAt: aGame
 	| nextPosition player |
-	player := aGame players keyAtIndex: aGame currentPlayerIndex - 1.
+	player := self playerToWhomEffectWasAppliedAt: aGame.
 	"(aGame players reject: [ :aPlayer | player = aPlayer ]) no rechaza al player"
 	aGame players
 		keysDo: [ :aPlayer | 
