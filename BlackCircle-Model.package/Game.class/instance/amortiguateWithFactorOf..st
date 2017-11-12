@@ -1,3 +1,3 @@
-as yet unclassified
+playing
 amortiguateWithFactorOf: aNumber 
 	currentAmortiguation := currentAmortiguation  * aNumber.

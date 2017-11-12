@@ -1,3 +1,3 @@
-as yet unclassified
+playing
 changeAmortiguationTo: newAmortiguation
 	currentAmortiguation := newAmortiguation 

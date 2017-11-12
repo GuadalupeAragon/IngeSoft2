@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "InstantCard",
+	"category" : "BlackCircle-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PotentiationCard",
+	"type" : "normal"
+}
