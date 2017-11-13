@@ -1,5 +1,6 @@
 applying
 reapplyAt: aGame
 	| player |
-	player := self playerToWhomEffectWasAppliedAt: aGame.
+	
+	player := aGame playerToWhomWasApplied: self.
 	self applyTo: player at: aGame atPosition: (aGame board positionOf: player)

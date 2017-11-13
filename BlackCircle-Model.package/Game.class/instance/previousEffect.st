@@ -1,4 +1,3 @@
 accessing
 previousEffect
-	
-	^ (gameHistory  last: (2 min: gameHistory  size)) first
+	^ self previousEffectPlayed at: 1

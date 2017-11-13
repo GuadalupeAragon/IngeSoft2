@@ -1,3 +1,3 @@
 accessing
 redoAt: aGame
-	self appliesAt: aGame removing: (aGame previousEffect at:2)
+	self appliesAt: aGame removing: (aGame previousCardRemoved)
