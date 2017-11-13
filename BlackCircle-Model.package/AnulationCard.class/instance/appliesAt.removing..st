@@ -1,5 +1,6 @@
 accessing
 appliesAt: aGame removing: aPermanentCard
 	| ownerOfTheCard |
-	ownerOfTheCard:=	aPermanentCard removeOf: aGame.
-	aGame gameHistory add: (OrderedCollection with:self with:aPermanentCard with: ownerOfTheCard)
+	ownerOfTheCard := aPermanentCard removeOf: aGame.
+	aGame savePlayed: self of: ownerOfTheCard thatRemoved: aPermanentCard
+	

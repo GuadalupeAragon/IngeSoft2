@@ -1,5 +1,5 @@
 test-InstantCard
-testWhenPlayerUsesUndoCardUndoesLastCardWhichWasAnulationCardUndoingOneSpeedUp
+testWhenPlayerUsesUndoCardUndoesLastCardWhichWasPotentationCardUndoingOneSpeedUp
 	| playerGuada board game playerFacu overloadCard undoCard deck overloadCardOne potentationCardOne |
 	playerGuada := self playerGuada.
 	playerFacu := self playerFacu.

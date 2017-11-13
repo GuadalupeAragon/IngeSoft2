@@ -2,9 +2,9 @@
 	"instance" : {
 		"applyTo:at:atPosition:" : "Guadalupe 10/7/2017 17:34",
 		"applyEffectToPlayersAt:exceptFor:" : "Guadalupe 11/11/2017 16:42",
-		"undoAt:" : "Guadalupe 11/12/2017 10:15",
+		"undoAt:" : "Guadalupe 11/13/2017 09:35",
 		"initializeSource:" : "Guadalupe 9/23/2017 19:09",
-		"reapplyAt:" : "Guadalupe 11/12/2017 14:41"
+		"reapplyAt:" : "Guadalupe 11/13/2017 09:35"
 	},
 	"class" : {
 		"source:" : "Guadalupe 9/23/2017 19:09"

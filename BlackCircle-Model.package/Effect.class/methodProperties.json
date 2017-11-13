@@ -1,10 +1,9 @@
 {
 	"instance" : {
-		"reapplyAt:" : "Guadalupe 11/12/2017 14:09",
-		"redoAt:" : "Guadalupe 11/12/2017 10:49",
-		"applyTo:at:atPosition:" : "Guadalupe 10/2/2017 12:00",
-		"playerToWhomEffectWasAppliedAt:" : "Guadalupe 11/12/2017 10:48",
-		"numberOfBoxes:withAmortiguationAt:" : "Guadalupe 11/11/2017 10:25"
+		"numberOfBoxes:withAmortiguationAt:" : "Guadalupe 11/11/2017 10:25",
+		"reapplyAt:" : "Guadalupe 11/13/2017 09:36",
+		"redoAt:" : "Guadalupe 11/12/2017 21:44",
+		"applyTo:at:atPosition:" : "Guadalupe 10/2/2017 12:00"
 	},
 	"class" : { }
 }

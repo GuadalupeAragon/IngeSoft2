@@ -1,5 +1,5 @@
 accessing
 redoAt: aGame
 	| player |
-	player := aGame previousEffect at:2.
+	player := aGame previousPlayerWhoPlayed.
 	self applyTo: player at: aGame atPosition: (aGame board positionOf: player)
