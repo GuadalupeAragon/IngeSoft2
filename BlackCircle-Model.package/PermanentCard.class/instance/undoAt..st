@@ -2,4 +2,5 @@ applying
 undoAt: aGame
 	| player |
 	player := aGame ownerOfTheCardRemoved.
-	(aGame cardsToBeAppliedAt: player) add: aGame lastCardRemoved	
+	aGame cardsToBeAppliedAt: player reAdd: (aGame lastCardRemoved)
+		

@@ -15,7 +15,7 @@
 		"testWhenPlayerUsesUndoCardUndoesLastEffectWhichIsGetACardNothingHappend" : "Guadalupe 11/15/2017 09:30",
 		"testWhenPlayerUsesUndoCardUndoesLastEffectWhichIsSpeedUp" : "Guadalupe 11/11/2017 17:24",
 		"testWhenPlayerIsAtWormholeBoxMovesBackwards4Boxes" : "Guadalupe 11/11/2017 09:47",
-		"testWhenPlayerIsAtAtomicBombBoxAllPlayersStartOverAgain" : "Guadalupe 11/11/2017 09:51",
+		"testWhenPlayerIsAtAtomicBombBoxAllPlayersStartOverAgain" : "Guadalupe 11/15/2017 15:19",
 		"testWhenPlayerUsesUndoCardUndoesLastEffectWhichIsWormhole" : "Guadalupe 11/12/2017 10:56",
 		"testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardAmortiguatingGameAgain" : "Guadalupe 11/12/2017 12:48",
 		"boardWith4BoxesAndNoEffect" : "Guadalupe 10/23/2017 12:39",
