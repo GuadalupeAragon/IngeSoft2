@@ -1,4 +1,4 @@
-test-PermanentCard
+accessing
 deckWith: overloadCard
 	^ Deck
 		generatingCardsFrom: (FixedCardSequence generating: {overloadCard})

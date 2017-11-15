@@ -1,3 +1,3 @@
-tests
+accessing
 playerFacu
 	^ Player named: 'Facu'

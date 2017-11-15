@@ -1,3 +1,3 @@
-test-InstantCard
+accessing
 undoCard
 	^ UndoCard new

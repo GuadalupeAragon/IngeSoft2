@@ -1,3 +1,3 @@
-test-InstantCard
+accessing
 potentationCard
 	^ PotentiationCard new

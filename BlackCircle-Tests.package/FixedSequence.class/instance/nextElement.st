@@ -1,4 +1,4 @@
-private
+accessing
 nextElement
 	| nextElement |
 	nextElement := source at: currentElementIndex.

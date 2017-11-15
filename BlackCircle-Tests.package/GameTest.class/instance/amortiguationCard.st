@@ -1,3 +1,3 @@
-test-PermanentCard
+accessing
 amortiguationCard
 	^ AmortiguationCard new

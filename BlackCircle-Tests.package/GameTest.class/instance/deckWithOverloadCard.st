@@ -1,4 +1,4 @@
-test-effects
+accessing
 deckWithOverloadCard
 	^ Deck
 		generatingCardsFrom: (FixedCardSequence generating: {OverloadCard new})

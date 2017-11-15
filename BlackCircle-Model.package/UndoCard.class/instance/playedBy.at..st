@@ -1,4 +1,4 @@
-appling
+applying
 playedBy: aPlayer at: aGame
 	aGame lastEffectOrCard undoAt: aGame.
 
