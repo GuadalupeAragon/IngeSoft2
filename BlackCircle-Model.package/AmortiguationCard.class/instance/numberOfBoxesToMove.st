@@ -1,3 +1,0 @@
-appling
-numberOfBoxesToMove
-	^0
