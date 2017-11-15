@@ -1,6 +1,6 @@
 tests
 testAdvancingLapLengthIncreasesLapInOne
-	| player board game deck |
+	| player board game  |
 	player := self playerFacu.
 	board := self boardWith4BoxesAndNoEffect.
 	

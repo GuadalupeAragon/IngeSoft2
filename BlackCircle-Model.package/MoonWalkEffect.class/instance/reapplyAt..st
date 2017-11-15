@@ -1,7 +1,8 @@
-accessing
+applying
 reapplyAt: aGame
+	"No usa el del padre porque tiene que hacer todos menos player retrocedan la misma cantidad de casilleros que antes, no una nueva cantidad"
+
 	| nextPosition player |
-	
 	player := aGame playerToWhomWasApplied: self.
 	aGame players
 		keysDo: [ :aPlayer | 

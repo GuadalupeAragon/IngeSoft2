@@ -1,4 +1,4 @@
-accessing
+applying
 undoAt: aGame
 	| player |
 	player := aGame ownerOfTheCardRemoved.

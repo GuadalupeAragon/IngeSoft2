@@ -1,7 +1,5 @@
-accessing
+applying
 undoAt: aGame
-	| previousPosition player |
-	
+	|  player |
 	player := aGame playerToWhomWasApplied: self.
-	previousPosition := aGame board previousPositionOf: player.
-	aGame board updatePositionOf: player at: previousPosition
+	self applyTo: player at: aGame atPosition: (aGame board positionOf: player)

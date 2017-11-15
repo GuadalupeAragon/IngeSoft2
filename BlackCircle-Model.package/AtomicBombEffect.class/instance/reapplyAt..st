@@ -1,2 +1,3 @@
-accessing
-reapplyAt:aGame
+applying
+reapplyAt: aGame
+	

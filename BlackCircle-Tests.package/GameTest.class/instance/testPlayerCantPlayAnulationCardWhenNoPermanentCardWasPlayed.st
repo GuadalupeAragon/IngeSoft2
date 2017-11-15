@@ -1,12 +1,12 @@
 test-InstantCard
 testPlayerCantPlayAnulationCardWhenNoPermanentCardWasPlayed
-	| playerGuada board game playerFacu overloadCardOne overloadCardTwo anulationCardOne anulationCardTwo deck |
+	| playerGuada board game playerFacu overloadCardOne undoCardTwo anulationCardOne anulationCardTwo deck |
 	playerGuada := self playerGuada.
 	playerFacu := self playerFacu.
 	board := Board with: 20 boxesGeneratingEffectsFrom: (FixedEffectSequence generating: {NoEffect new}).
 	overloadCardOne := self overloadCard.
 	anulationCardOne := self anulationCard.
-	overloadCardTwo := self overloadCard.
+	undoCardTwo := self undoCard .
 	anulationCardTwo := self anulationCard.
 	deck := Deck
 		generatingCardsFrom:
@@ -15,7 +15,7 @@ testPlayerCantPlayAnulationCardWhenNoPermanentCardWasPlayed
 					{overloadCardOne.
 					anulationCardOne.
 					anulationCardTwo.
-					overloadCardTwo}).
+					undoCardTwo}).
 	game := Game
 		withBoard: board
 		requiredLapsToWin: 3
@@ -26,6 +26,9 @@ testPlayerCantPlayAnulationCardWhenNoPermanentCardWasPlayed
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 1)))}.
 	game playTurn: playerGuada.
 	self assert: (board positionOf: playerGuada) currentBox equals: 4.
+	self assert: (board positionOf: playerGuada) currentLap equals: 0.
+	game apply: undoCardTwo  playedBy: playerFacu .
+		self assert: (board positionOf: playerGuada) currentBox equals: 4.
 	self assert: (board positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.
 	self assert: (board positionOf: playerFacu) currentBox equals: 1.

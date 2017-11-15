@@ -1,4 +1,4 @@
-accessing
+appling
 appliesAt: aGame removing: aPermanentCard
 	| ownerOfTheCard |
 	ownerOfTheCard := aPermanentCard removeOf: aGame.
