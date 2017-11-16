@@ -1,3 +1,3 @@
 removing
 removeOf: aGame
-	^ aGame removeAPermanentCard: self
+	self subclassResponsibility

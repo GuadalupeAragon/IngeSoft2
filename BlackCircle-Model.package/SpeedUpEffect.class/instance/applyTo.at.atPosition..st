@@ -1,5 +1,8 @@
 applying
-applyTo: aPlayer at: game atPosition: position
-	| nextPosition |
-	nextPosition := game positionWhenMoving: (self numberOfBoxes: 4 withAmortiguationAt: game ) from: position.
-	game board updatePositionOf: aPlayer at: nextPosition
+applyTo: aPlayer at: aGame atPosition: aPosition
+	
+	self
+		move: aPlayer
+		at: aGame
+		numberOfBoxes: 4
+		from: aPosition

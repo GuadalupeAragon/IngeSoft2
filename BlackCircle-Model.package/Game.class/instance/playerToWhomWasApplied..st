@@ -1,4 +1,4 @@
 accessing
 playerToWhomWasApplied: anEffectOrACard
-	gameHistory do: [ :played | (played at:1) = anEffectOrACard 
-		ifTrue: [ ^ (played at:2) ] ]
+	^ (gameHistory detect: [ :played | (played at: 1) = anEffectOrACard ]) at: 2
+	

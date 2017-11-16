@@ -1,3 +1,0 @@
-accessing
-deck
-	^ deck

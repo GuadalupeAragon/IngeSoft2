@@ -1,3 +1,3 @@
 applying
-numberOfBoxesToMove
+undoAt: aGame
 	self subclassResponsibility

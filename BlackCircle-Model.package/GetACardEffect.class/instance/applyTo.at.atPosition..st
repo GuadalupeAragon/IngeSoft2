@@ -1,6 +1,6 @@
 applying
 applyTo: aPlayer at: game atPosition: position
-	| card |
-	card  := (game deck) playerPickACard.
-	(game cardsOf: aPlayer) add: card.
+	
+	game picksCard: aPlayer.
+
 	game board updatePositionOf: aPlayer at: position

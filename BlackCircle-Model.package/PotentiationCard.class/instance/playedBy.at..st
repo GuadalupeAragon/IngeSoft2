@@ -1,4 +1,4 @@
-appling
+applying
 playedBy: aPlayer at: aGame
 	| effect player |
 	effect := aGame lastEffectOrCard.

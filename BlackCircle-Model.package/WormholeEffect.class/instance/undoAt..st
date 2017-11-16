@@ -1,7 +1,9 @@
 applying
 undoAt: aGame
-	| player nextPosition |
-
+	| player |
 	player := aGame playerToWhomWasApplied: self.
-	nextPosition := aGame positionWhenMoving: (self numberOfBoxes: 4 withAmortiguationAt: aGame) from: (aGame board positionOf: player).
-	aGame board updatePositionOf: player at: nextPosition
+	self
+		move: player
+		at: aGame
+		numberOfBoxes: 4
+		from: (aGame board positionOf: player)

@@ -1,6 +1,6 @@
 test-InstantCard
 testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend
-	| playerGuada board game playerFacu potentationCard undoCard deck overloadCardOne undoCardOne |
+	| playerGuada board game playerFacu potentationCard undoCard deck potentationCardOne undoCardOne |
 	playerGuada := self playerGuada.
 	playerFacu := self playerFacu.
 	board := Board
@@ -12,7 +12,7 @@ testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend
 					AtomicBombEffect new}).
 	potentationCard := self potentationCard .
 	undoCard := self undoCard.
-	overloadCardOne := self overloadCard.
+	potentationCardOne := self potentationCard .
 	undoCardOne := self undoCard.
 	deck := Deck
 		generatingCardsFrom:
@@ -20,7 +20,7 @@ testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend
 				generating:
 					{potentationCard.
 					undoCard.
-					overloadCardOne.
+					potentationCardOne.
 					undoCardOne}).
 	game := Game
 		withBoard: board
@@ -31,6 +31,9 @@ testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(5 1 1)))}.
 	game playTurn: playerGuada.
+	self assert: (board positionOf: playerGuada) currentBox equals: 5.
+	self assert: (board positionOf: playerGuada) currentLap equals: 0.
+	game apply: potentationCard  playedBy: playerFacu .
 	self assert: (board positionOf: playerGuada) currentBox equals: 5.
 	self assert: (board positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.

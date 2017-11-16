@@ -3,8 +3,5 @@ removeAPermanentCard: aCard
 	| ownerOfTheCard |
 	ownerOfTheCard := cardsToBeApplied keys
 		detect: [ :player | (self cardsToBeAppliedAt: player) includes: aCard ]
-		ifNone: [ PlayTurnException signal ].
-	(self cardsToBeAppliedAt: ownerOfTheCard) remove: aCard.
-	^ ownerOfTheCard
-
-	
+		ifNone: [ PlayTurnException signal: 'Permanent card not played' ].
+	(self cardsToBeAppliedAt: ownerOfTheCard) remove: aCard
