@@ -38,4 +38,5 @@ testWhenPlayerUsesUndoCardUndoesLastEffectWhichIsSpeedUp
 	self assert: (board positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.
 	self assert: (board positionOf: playerFacu) currentBox equals: 2.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0
+	self assert: (board positionOf: playerFacu) currentLap equals: 0.
+	

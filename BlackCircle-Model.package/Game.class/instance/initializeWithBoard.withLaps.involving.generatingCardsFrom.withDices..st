@@ -7,7 +7,7 @@ initializeWithBoard: aBoard withLaps: numberOfLaps involving: thePlayers generat
 	cardsToBeApplied := Dictionary new.
 	thePlayers
 		do: [ :player | 
-			players at: player put: (OrderedCollection with: deck playerPickACard with: deck playerPickACard).
+			players at: player put: (OrderedCollection with: deck nextCard with: deck nextCard).
 			cardsToBeApplied at: player put: OrderedCollection new ].
 	currentPlayerIndex := 1.
 	hasGameEnded := false.

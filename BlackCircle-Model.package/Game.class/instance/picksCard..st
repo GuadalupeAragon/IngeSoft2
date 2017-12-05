@@ -1,5 +1,5 @@
 playing
 picksCard: aPlayer
 	| card |
-	card  := deck playerPickACard.
+	card  := deck nextCard.
 	(self cardsOf: aPlayer) add: card.
