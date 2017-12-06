@@ -1,3 +1,6 @@
-accessing
+accessing-previousPlayed
 previousEffect
-	^ self previousEffectPlayed at: 1
+| played |
+played := self previousPlayed.
+
+	^ self effectOrCardOf: played

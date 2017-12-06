@@ -1,3 +1,5 @@
-accessing
+accessing-lastPlayed
 lastCardRemoved
-	^ self    lastEffectOrInstantCardPlay at: 3
+	| played |
+	played := self lastPlayed.
+	^ self cardRemovedAt: played

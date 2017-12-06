@@ -1,4 +1,4 @@
-accessing
+accessing-positions
 previousPositionOf: aPlayer
 	| history |
 	history := self historyOf: aPlayer.

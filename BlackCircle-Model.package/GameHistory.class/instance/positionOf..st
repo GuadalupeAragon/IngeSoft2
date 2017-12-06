@@ -1,4 +1,4 @@
-accessing
+accessing-positions
 positionOf: aPlayer
 	"va a devolver la posicion actual de player"
 

@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"playersHistory",
+		"playersPositionsHistories",
 		"gameHistory"
 	],
 	"name" : "GameHistory",

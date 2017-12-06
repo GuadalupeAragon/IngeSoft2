@@ -1,3 +1,6 @@
-accessing
+accessing-previousPlayed
 previousPlayerWhoPlayed
-	^ self  previousEffectPlayed at: 2
+| played |
+played := self previousPlayed.
+
+	^ self playerOf: played.

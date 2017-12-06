@@ -1,3 +1,5 @@
-accessing
+accessing-lastPlayed
 lastEffectOrCard
-^ (self   lastEffectOrInstantCardPlay at: 1)
+	| played |
+	played := self  lastPlayed.
+	^ self effectOrCardOf: played

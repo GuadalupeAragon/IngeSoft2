@@ -1,4 +1,6 @@
 accessing
 playerToWhomWasApplied: anEffectOrACard
-	^ (gameHistory detect: [ :played | (played at: 1) = anEffectOrACard ]) at: 2
+	| played |
+	played := gameHistory detect: [ :aPlayed | (self effectOrCardOf: aPlayed) = anEffectOrACard ].
 	
+	^ self playerOf: played

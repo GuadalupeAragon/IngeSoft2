@@ -1,4 +1,4 @@
 initialization
 initialize
-	playersHistory := Dictionary new.
-	gameHistory := OrderedCollection new..
+	playersPositionsHistories  := Dictionary new.
+	gameHistory := OrderedCollection new

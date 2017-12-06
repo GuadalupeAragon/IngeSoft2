@@ -1,3 +1,5 @@
-accessing
+accessing-previousPlayed
 previousCardRemoved
-	^ self previousEffectPlayed at: 3
+	| played |
+	played := self previousPlayed.
+	^self cardRemovedAt: played.
