@@ -1,3 +1,3 @@
 applying
 undoAt: aGame
-	(aGame previousEffect ) undoAt: aGame
+	(aGame  history  previousEffect ) undoAt: aGame

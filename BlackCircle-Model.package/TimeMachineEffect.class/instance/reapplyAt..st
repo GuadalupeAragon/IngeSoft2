@@ -4,6 +4,6 @@ reapplyAt: aGame
 	la anterior al time machine y la posicion que hizo cambiar la posicion actual)"
 
 	| previousPosition player |
-	player := aGame lastPlayerWhoPlayed.
+	player := aGame history lastPlayerWhoPlayed.
 	previousPosition := ((aGame history historyOf: player) last: (4 min: (aGame history  historyOf: player) size)) first.
 	aGame history updatePositionOf: player at: previousPosition

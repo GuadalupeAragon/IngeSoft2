@@ -1,7 +1,7 @@
 applying
 undoAt: aGame
 	| player |
-	player := aGame playerToWhomWasApplied: self.
+	player := aGame  history playerToWhomWasApplied: self.
 	self
 		move: player
 		at: aGame

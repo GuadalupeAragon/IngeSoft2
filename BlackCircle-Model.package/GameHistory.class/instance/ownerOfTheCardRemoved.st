@@ -1,4 +1,3 @@
 accessing
 ownerOfTheCardRemoved
-	
 	^ self lastPlayerWhoPlayed

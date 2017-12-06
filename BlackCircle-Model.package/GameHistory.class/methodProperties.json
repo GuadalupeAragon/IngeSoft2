@@ -1,10 +1,23 @@
 {
 	"instance" : {
 		"previousPositionOf:" : "Guadalupe 12/6/2017 09:46",
-		"initialize" : "Guadalupe 12/6/2017 10:04",
-		"updatePositionOf:at:" : "Guadalupe 12/6/2017 09:48",
+		"lastEffectOrInstantCardPlay" : "Guadalupe 12/6/2017 10:26",
+		"lastCardRemoved" : "Guadalupe 12/6/2017 10:25",
+		"previousEffect" : "Guadalupe 12/6/2017 10:29",
+		"saveEffect:appliedTo:" : "Guadalupe 12/6/2017 10:36",
+		"savePlayed:playedBy:" : "Guadalupe 12/6/2017 10:32",
+		"savePlayed:thatRemoved:from:" : "Guadalupe 12/6/2017 10:33",
+		"lastEffectOrCard" : "Guadalupe 12/6/2017 10:25",
+		"previousPlayerWhoPlayed" : "Guadalupe 12/6/2017 10:42",
+		"initialize" : "Guadalupe 12/6/2017 10:37",
 		"historyOf:" : "Guadalupe 12/6/2017 09:12",
-		"positionOf:" : "Guadalupe 12/6/2017 09:45"
+		"positionOf:" : "Guadalupe 12/6/2017 09:45",
+		"lastPlayerWhoPlayed" : "Guadalupe 12/6/2017 10:42",
+		"previousEffectPlayed" : "Guadalupe 12/6/2017 10:30",
+		"updatePositionOf:at:" : "Guadalupe 12/6/2017 09:48",
+		"ownerOfTheCardRemoved" : "Guadalupe 12/6/2017 10:43",
+		"previousCardRemoved" : "Guadalupe 12/6/2017 10:28",
+		"playerToWhomWasApplied:" : "Guadalupe 12/6/2017 10:28"
 	},
 	"class" : {
 		"initialization" : "Guadalupe 12/6/2017 09:43"

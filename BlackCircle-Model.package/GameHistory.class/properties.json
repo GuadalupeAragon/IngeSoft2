@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"playersHistory"
+		"playersHistory",
+		"gameHistory"
 	],
 	"name" : "GameHistory",
 	"type" : "normal"
