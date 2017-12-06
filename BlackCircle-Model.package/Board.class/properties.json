@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"numberBoxes",
-		"playersHistory",
 		"boxesEffects"
 	],
 	"name" : "Board",

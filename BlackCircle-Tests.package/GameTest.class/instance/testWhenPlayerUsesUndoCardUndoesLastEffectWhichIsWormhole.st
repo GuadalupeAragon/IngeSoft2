@@ -31,17 +31,17 @@ testWhenPlayerUsesUndoCardUndoesLastEffectWhichIsWormhole
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 1 2 1)))}.
 	game playTurn: playerOne.
-	self assert: (board positionOf: playerOne) currentBox equals: 3.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
+	self assert: (game history positionOf: playerOne) currentBox equals: 3.
+	self assert: (game history positionOf: playerOne) currentLap equals: 0.
 	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: 1.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0.
+	self assert: (game history positionOf: playerTwo) currentBox equals: 1.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0.
 	game playTurn: playerOne.
-	self assert: (board positionOf: playerOne) currentBox equals: 5.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
+	self assert: (game history positionOf: playerOne) currentBox equals: 5.
+	self assert: (game history positionOf: playerOne) currentLap equals: 0.
 	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: -2.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0.
+	self assert: (game history positionOf: playerTwo) currentBox equals: -2.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0.
 	game apply: undoCard playedBy: playerOne.
-	self assert: (board positionOf: playerTwo) currentBox equals: 2.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0
+	self assert: (game history positionOf: playerTwo) currentBox equals: 2.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0

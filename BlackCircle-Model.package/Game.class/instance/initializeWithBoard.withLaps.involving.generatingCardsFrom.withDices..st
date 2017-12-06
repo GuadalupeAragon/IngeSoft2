@@ -2,6 +2,7 @@ initialization
 initializeWithBoard: aBoard withLaps: numberOfLaps involving: thePlayers generatingCardsFrom: aDeck withDices: theDices
 	board := aBoard.
 	totalLaps := numberOfLaps.
+	history := GameHistory initialization.
 	deck := aDeck.
 	players := OrderedDictionary new.
 	cardsToBeApplied := Dictionary new.

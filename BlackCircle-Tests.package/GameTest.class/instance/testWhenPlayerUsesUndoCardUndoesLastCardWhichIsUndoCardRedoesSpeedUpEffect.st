@@ -31,12 +31,12 @@ testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesSpeedUpEffect
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 2)))}.
 	game playTurn: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 7.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 7.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
 	game apply: undoCardOne playedBy: playerFacu.
-	self assert: (board positionOf: playerGuada) currentBox equals: 3.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 3.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
 
 	game apply: undoCard playedBy: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 7.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0
+	self assert: (game history positionOf: playerGuada) currentBox equals: 7.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0

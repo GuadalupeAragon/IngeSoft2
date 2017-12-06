@@ -6,4 +6,4 @@ undoAt: aGame
 		move: player
 		at: aGame
 		numberOfBoxes: 4
-		from: (aGame board positionOf: player)
+		from: (aGame history  positionOf: player)

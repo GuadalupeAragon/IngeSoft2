@@ -1,12 +1,8 @@
 {
 	"instance" : {
-		"initializeWith:boxesGeneratingEffectsFrom:" : "Guadalupe 11/15/2017 09:41",
-		"previousPositionOf:" : "Guadalupe 10/11/2017 21:24",
-		"updatePositionOf:at:" : "Guadalupe 10/11/2017 21:13",
 		"effectOfBox:" : "Guadalupe 9/23/2017 18:04",
-		"historyOf:" : "Guadalupe 10/11/2017 21:09",
-		"lapLength" : "MarianoFacundo 9/6/2017 21:39",
-		"positionOf:" : "Guadalupe 10/11/2017 21:09"
+		"initializeWith:boxesGeneratingEffectsFrom:" : "Guadalupe 11/15/2017 09:41",
+		"lapLength" : "MarianoFacundo 9/6/2017 21:39"
 	},
 	"class" : {
 		"assertIsPositive:" : "Guadalupe 9/30/2017 10:01",

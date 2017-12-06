@@ -16,7 +16,8 @@
 		"currentAmortiguation",
 		"cardsToBeApplied",
 		"deck",
-		"gameHistory"
+		"gameHistory",
+		"history"
 	],
 	"name" : "Game",
 	"type" : "normal"

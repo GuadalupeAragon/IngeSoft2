@@ -5,5 +5,5 @@ reapplyAt: aGame
 
 	| previousPosition player |
 	player := aGame lastPlayerWhoPlayed.
-	previousPosition := ((aGame board historyOf: player) last: (4 min: (aGame board historyOf: player) size)) first.
-	aGame board updatePositionOf: player at: previousPosition
+	previousPosition := ((aGame history historyOf: player) last: (4 min: (aGame history  historyOf: player) size)) first.
+	aGame history updatePositionOf: player at: previousPosition
