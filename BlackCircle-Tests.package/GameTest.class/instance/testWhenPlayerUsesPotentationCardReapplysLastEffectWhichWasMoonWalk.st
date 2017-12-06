@@ -31,15 +31,15 @@ testWhenPlayerUsesPotentationCardReapplysLastEffectWhichWasMoonWalk
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(6 1 2 1 1)))}.
 	game playTurn: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 6.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 6.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.
-	self assert: (board positionOf: playerFacu) currentBox equals: 1.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0.
-	self assert: (board positionOf: playerGuada) currentBox equals: 4.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerFacu) currentBox equals: 1.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 4.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
 	game apply: potentationCardOne playedBy: playerFacu.
-	self assert: (board positionOf: playerFacu) currentBox equals: 1.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0.
-	self assert: (board positionOf: playerGuada) currentBox equals: 2.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0
+	self assert: (game history positionOf: playerFacu) currentBox equals: 1.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 2.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0

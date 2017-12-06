@@ -1,4 +1,4 @@
 applying
 undoAt: aGame
-	aGame previousEffect redoAt: aGame
+	aGame history  previousEffect redoAt: aGame
 

@@ -1,5 +1,5 @@
 appling
 apply: aCard playedBy: aPlayer
-	aCard playedBy: aPlayer at:self. 
-	
-	
+
+	self checkIfItNeedsToBe: aPlayer turnAndRemoveIts: aCard.
+	aCard playedBy: aPlayer at: self

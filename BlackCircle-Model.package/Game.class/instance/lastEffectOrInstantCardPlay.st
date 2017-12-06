@@ -1,3 +1,0 @@
-accessing
-lastEffectOrInstantCardPlay
-^ gameHistory last.

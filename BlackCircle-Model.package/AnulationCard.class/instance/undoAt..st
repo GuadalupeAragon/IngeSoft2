@@ -1,3 +1,3 @@
 applying
 undoAt: aGame
-	(aGame lastCardRemoved) undoAt: aGame
+	(aGame history lastCardRemoved) undoAt: aGame

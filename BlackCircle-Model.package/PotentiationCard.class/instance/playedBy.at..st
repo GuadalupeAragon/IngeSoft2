@@ -1,7 +1,7 @@
 applying
 playedBy: aPlayer at: aGame
 	| effect player |
-	effect := aGame lastEffectOrCard.
-	player := aGame lastPlayerWhoPlayed.
+	effect := aGame history  lastEffectOrCard.
+	player := aGame  history  lastPlayerWhoPlayed.
 	effect reapplyAt: aGame.
-	aGame savePlayed: self playedBy: aPlayer
+	aGame history savePlayed: self playedBy: aPlayer

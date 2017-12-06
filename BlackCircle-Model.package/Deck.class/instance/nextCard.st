@@ -1,4 +1,4 @@
 playing
-playerPickACard
+nextCard
 	^ cardSource  nextCard
 	

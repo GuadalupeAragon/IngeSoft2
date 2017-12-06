@@ -10,9 +10,9 @@ testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend
 				generating:
 					{NoEffect new.
 					AtomicBombEffect new}).
-	potentationCard := self potentationCard .
+	potentationCard := self potentationCard.
 	undoCard := self undoCard.
-	potentationCardOne := self potentationCard .
+	potentationCardOne := self potentationCard.
 	undoCardOne := self undoCard.
 	deck := Deck
 		generatingCardsFrom:
@@ -31,31 +31,31 @@ testWhenPlayerUsesPotentationCardAfterUndoCardUndoesUndoCardNothingHappend
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(5 1 1)))}.
 	game playTurn: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 5.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
-	game apply: potentationCard  playedBy: playerFacu .
-	self assert: (board positionOf: playerGuada) currentBox equals: 5.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
-	game playTurn: playerFacu.
-	self assert: (board positionOf: playerFacu) currentBox equals: 1.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0.
-	game playTurn: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 0.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
-	self assert: (board positionOf: playerFacu) currentBox equals: 0.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0.
-	game apply: undoCardOne playedBy: playerFacu.
-	self assert: (board positionOf: playerGuada) currentBox equals: 5.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
-	self assert: (board positionOf: playerFacu) currentBox equals: 1.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0.
-	game apply: undoCard playedBy: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 0.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
-	self assert: (board positionOf: playerFacu) currentBox equals: 0.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 5.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
 	game apply: potentationCard playedBy: playerGuada.
-	self assert: (board positionOf: playerGuada) currentBox equals: 0.
-	self assert: (board positionOf: playerGuada) currentLap equals: 0.
-	self assert: (board positionOf: playerFacu) currentBox equals: 0.
-	self assert: (board positionOf: playerFacu) currentLap equals: 0
+	self assert: (game history positionOf: playerGuada) currentBox equals: 5.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	game playTurn: playerFacu.
+	self assert: (game history positionOf: playerFacu) currentBox equals: 1.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	game playTurn: playerGuada.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 0.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerFacu) currentBox equals: 0.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	game apply: undoCardOne playedBy: playerFacu.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 5.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerFacu) currentBox equals: 1.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	game apply: undoCard playedBy: playerGuada.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 0.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerFacu) currentBox equals: 0.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	game apply: potentationCardOne playedBy: playerFacu.
+	self assert: (game history positionOf: playerGuada) currentBox equals: 0.
+	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game history positionOf: playerFacu) currentBox equals: 0.
+	self assert: (game history positionOf: playerFacu) currentLap equals: 0

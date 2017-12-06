@@ -1,4 +1,4 @@
 applying
 undoAt: aGame
-	aGame players do: [ :player | aGame board updatePositionOf: player at: (aGame board previousPositionOf: player) ]
+	aGame players do: [ :player | aGame history updatePositionOf: player at: (aGame history previousPositionOf: player) ]
 	

@@ -25,14 +25,14 @@ testWhenPlayerIsAtSpeedUpBoxAndPlayedOneAmortiguationIsSetMovesFoward2Boxes
 				facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 2)))}.
 	game apply: amortiguationCard playedBy: playerOne.
 	game playTurn: playerOne.
-	self assert: (board positionOf: playerOne) currentBox equals: 1.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
+	self assert: (game history positionOf: playerOne) currentBox equals: 1.
+	self assert: (game history positionOf: playerOne) currentLap equals: 0.
 	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: 4.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0.
+	self assert: (game history positionOf: playerTwo) currentBox equals: 4.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0.
 	game playTurn: playerOne.
-	self assert: (board positionOf: playerOne) currentBox equals: 4.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
+	self assert: (game history positionOf: playerOne) currentBox equals: 4.
+	self assert: (game history positionOf: playerOne) currentLap equals: 0.
 	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: 8.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0
+	self assert: (game history positionOf: playerTwo) currentBox equals: 8.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0

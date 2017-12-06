@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "BlackCircle-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"playersPositionsHistories",
+		"gameHistory"
+	],
+	"name" : "GameHistory",
+	"type" : "normal"
+}

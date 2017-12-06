@@ -22,6 +22,6 @@ testWhenPlayerIsAtGetACardBoxGetsOneMoreCard
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(2)))}.
 	game playTurn: player.
-	self assert: (board positionOf: player) currentBox equals: 2.
-	self assert: (board positionOf: player) currentLap equals: 0.
+	self assert: (game history positionOf: player) currentBox equals: 2.
+	self assert: (game history positionOf: player) currentLap equals: 0.
 	self assert: (game cardsOf: player) equals: (OrderedCollection with: speedCard with: overloadCard with: speedCard)

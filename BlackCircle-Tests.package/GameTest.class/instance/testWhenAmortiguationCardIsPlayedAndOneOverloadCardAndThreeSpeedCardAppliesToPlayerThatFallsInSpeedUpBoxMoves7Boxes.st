@@ -39,21 +39,21 @@ testWhenAmortiguationCardIsPlayedAndOneOverloadCardAndThreeSpeedCardAppliesToPla
 				facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(1 2 1 2 4)))}.
 	game apply: amortiguationCard playedBy: playerOne.
 	game playTurn: playerOne.
-	self assert: (board positionOf: playerOne) currentBox equals: 1.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
+	self assert: (game history positionOf: playerOne) currentBox equals: 1.
+	self assert: (game history positionOf: playerOne) currentLap equals: 0.
 	game apply: speedCardOne playedBy: playerTwo to: playerTwo.
 	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: 3.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0.
+	self assert: (game history positionOf: playerTwo) currentBox equals: 3.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0.
 	game apply: speedCard playedBy: playerThree to: playerTwo.
 	game playTurn: playerThree.
-	self assert: (board positionOf: playerThree) currentBox equals: 1.
-	self assert: (board positionOf: playerThree) currentLap equals: 0.
+	self assert: (game history positionOf: playerThree) currentBox equals: 1.
+	self assert: (game history positionOf: playerThree) currentLap equals: 0.
 	game apply: overloadCard playedBy: playerOne to: playerTwo.
 	game playTurn: playerOne.
-	self assert: (board positionOf: playerOne) currentBox equals: 3.
-	self assert: (board positionOf: playerOne) currentLap equals: 0.
+	self assert: (game history positionOf: playerOne) currentBox equals: 3.
+	self assert: (game history positionOf: playerOne) currentLap equals: 0.
 	game apply: speedCardTwo playedBy: playerTwo to: playerTwo.
 	game playTurn: playerTwo.
-	self assert: (board positionOf: playerTwo) currentBox equals: 10.
-	self assert: (board positionOf: playerTwo) currentLap equals: 0
+	self assert: (game history positionOf: playerTwo) currentBox equals: 10.
+	self assert: (game history positionOf: playerTwo) currentLap equals: 0

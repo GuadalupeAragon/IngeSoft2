@@ -1,4 +1,4 @@
 playing
 ifWon: aPlayer do: aBlock
-	totalLaps <= (board positionOf: aPlayer) currentLap
+	totalLaps <= (history  positionOf: aPlayer) currentLap
 		ifTrue: aBlock

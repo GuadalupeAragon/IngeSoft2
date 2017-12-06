@@ -1,9 +1,10 @@
 {
 	"instance" : {
-		"numberOfBoxes:withAmortiguationAt:" : "Guadalupe 11/11/2017 10:25",
-		"reapplyAt:" : "Guadalupe 11/13/2017 09:36",
-		"redoAt:" : "Guadalupe 11/12/2017 21:44",
-		"applyTo:at:atPosition:" : "Guadalupe 10/2/2017 12:00"
+		"reapplyAt:" : "Guadalupe 12/6/2017 10:27",
+		"redoAt:" : "Guadalupe 12/6/2017 10:30",
+		"applyTo:at:atPosition:" : "Guadalupe 10/2/2017 12:00",
+		"undoAt:" : "Guadalupe 12/5/2017 15:03",
+		"numberOfBoxes:withAmortiguationAt:" : "Guadalupe 11/11/2017 10:25"
 	},
 	"class" : { }
 }
