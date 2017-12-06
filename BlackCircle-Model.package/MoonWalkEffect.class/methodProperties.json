@@ -1,7 +1,7 @@
 {
 	"instance" : {
 		"applyEffectToPlayersAt:exceptFor:moving:" : "Guadalupe 12/6/2017 09:47",
-		"applyTo:at:atPosition:" : "Guadalupe 12/6/2017 09:47",
+		"applyTo:at:atPosition:" : "Guadalupe 12/6/2017 16:24",
 		"undoAt:" : "Guadalupe 12/6/2017 10:27",
 		"initializeSource:" : "Guadalupe 9/23/2017 19:09",
 		"reapplyAt:" : "Guadalupe 12/6/2017 10:27"
