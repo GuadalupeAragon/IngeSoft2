@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PermanentCard",
+	"category" : "BlackCircle-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"effect",
+		"numberOfBox"
+	],
+	"name" : "MirrorCard",
+	"type" : "normal"
+}
