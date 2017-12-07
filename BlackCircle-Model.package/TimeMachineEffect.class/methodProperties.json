@@ -2,6 +2,7 @@
 	"instance" : {
 		"reapplyAt:" : "Guadalupe 12/6/2017 10:26",
 		"undoAt:" : "Guadalupe 12/6/2017 10:27",
+		"invertedApplyTo:at:at:" : "Guadalupe 12/7/2017 09:43",
 		"applyTo:at:atPosition:" : "Guadalupe 12/6/2017 16:24"
 	},
 	"class" : { }
