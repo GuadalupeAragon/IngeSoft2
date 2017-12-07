@@ -6,5 +6,5 @@ moveAndApplyEffectsTo: aPlayer
 	roll := self throwDices.
 	nextPosition := self
 		positionWhenMoving: roll + numberOfBoxes
-		from: (history positionOf: aPlayer).
+		from: (context positionOf: aPlayer).
 	self assertEffectIsApplyableTo: aPlayer at: nextPosition

@@ -1,3 +1,3 @@
 removing
 removeOf: aGame
-	aGame changeAmortiguationTo: (aGame currentAmortiguation quo: 2)
+	aGame context changeAmortiguationTo: (aGame context  currentAmortiguation quo: 2)

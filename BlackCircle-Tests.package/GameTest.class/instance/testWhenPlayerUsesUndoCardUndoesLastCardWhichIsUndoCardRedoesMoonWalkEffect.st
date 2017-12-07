@@ -31,23 +31,23 @@ testWhenPlayerUsesUndoCardUndoesLastCardWhichIsUndoCardRedoesMoonWalkEffect
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(5 5 1)))}.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 5.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 5.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 5.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 5.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 6.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 3.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 6.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 3.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
 	game apply: undoCardOne playedBy: playerFacu.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 6.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 5.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 6.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 5.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
 	game apply: undoCard  playedBy: playerGuada.
-		self assert: (game history positionOf: playerGuada) currentBox equals: 6.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 3.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+		self assert: (game context positionOf: playerGuada) currentBox equals: 6.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 3.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.

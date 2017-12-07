@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GameHistoryTest",
+	"name" : "GameContextTest",
 	"type" : "normal"
 }

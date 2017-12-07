@@ -21,11 +21,11 @@ testWhenPlayerUsesMirrorCardToAtomicBombBoxNothingHappend
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 2)))}.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 3.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 3.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
 	game apply: mirrorCard playedBy: playerFacu at: 2.
 	game playTurn: playerFacu.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 3.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 2.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0
+	self assert: (game context positionOf: playerGuada) currentBox equals: 3.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 2.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0

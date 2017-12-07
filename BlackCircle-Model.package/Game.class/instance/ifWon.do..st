@@ -1,4 +1,4 @@
 playing
 ifWon: aPlayer do: aBlock
-	totalLaps <= (history  positionOf: aPlayer) currentLap
+	totalLaps <= (context positionOf: aPlayer) currentLap
 		ifTrue: aBlock

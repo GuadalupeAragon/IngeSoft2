@@ -1,3 +1,3 @@
 applying
 invertedApplyTo: aPlayer at: aGame at: aPosition
-	aGame history updatePositionOf: aPlayer at: aPosition.
+	aGame context updatePositionOf: aPlayer at: aPosition.

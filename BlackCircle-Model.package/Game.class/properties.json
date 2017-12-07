@@ -8,15 +8,12 @@
 	"instvars" : [
 		"board",
 		"players",
-		"winner",
-		"dices",
-		"hasGameEnded",
-		"totalLaps",
-		"currentPlayerIndex",
-		"currentAmortiguation",
-		"cardsToBeApplied",
 		"deck",
-		"history"
+		"dices",
+		"totalLaps",
+		"cardsToBeApplied",
+		"winner",
+		"context"
 	],
 	"name" : "Game",
 	"type" : "normal"

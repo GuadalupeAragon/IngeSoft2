@@ -34,17 +34,17 @@ testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardMirrorCardIsBackAtGa
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(2 1 4)))}.
 	game apply: mirrorCard playedBy: playerGuada at: 4.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 6.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 6.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
 	game apply: anulationCard playedBy: playerFacu toPermanetCard: mirrorCard.
 	game apply: undoCard playedBy: playerFacu.
 	game playTurn: playerFacu.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 1.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 1.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
 	game playTurn: playerHijitus.
-	self assert: (game history positionOf: playerHijitus) currentBox equals: 4.
-	self assert: (game history positionOf: playerHijitus) currentLap equals: 0.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 10.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 5.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0
+	self assert: (game context positionOf: playerHijitus) currentBox equals: 4.
+	self assert: (game context positionOf: playerHijitus) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 10.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 5.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0

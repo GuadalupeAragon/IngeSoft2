@@ -5,4 +5,4 @@ invertedApplyTo: aPlayer at: aGame at: aPosition
 	nextPosition := aGame
 		positionWhenMoving: (self numberOfBoxes: nBoxes negated withAmortiguationAt: aGame)
 		from: aPosition.
-	aGame history updatePositionOf: aPlayer at: nextPosition
+	aGame context updatePositionOf: aPlayer at: nextPosition

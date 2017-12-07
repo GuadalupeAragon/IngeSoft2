@@ -1,5 +1,5 @@
 applying
 playedBy: aPlayer at: aGame
 	
-	aGame history  lastEffectOrCard undoAt: aGame.
-	aGame history savePlayed: self playedBy: aPlayer
+	aGame context  lastEffectOrCard undoAt: aGame.
+	aGame context savePlayed: self playedBy: aPlayer

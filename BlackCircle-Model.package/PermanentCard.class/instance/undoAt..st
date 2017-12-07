@@ -1,5 +1,5 @@
 applying
 undoAt: aGame
 	aGame
-		cardsToBeAppliedAt: aGame  history  ownerOfTheCardRemoved
-		reAdd: aGame history  lastCardRemoved
+		cardsToBeAppliedAt: aGame  context  ownerOfTheCardRemoved
+		reAdd: aGame context  lastCardRemoved

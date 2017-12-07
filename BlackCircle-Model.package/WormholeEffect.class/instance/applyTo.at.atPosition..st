@@ -5,4 +5,4 @@ applyTo: aPlayer at: aGame atPosition: aPosition
 		at: aGame
 		numberOfBoxes: -4
 		from: aPosition.
-			aGame history saveEffect: self appliedTo: aPlayer
+			aGame context saveEffect: self appliedTo: aPlayer
