@@ -1,4 +1,4 @@
-accessing
+applying
 playedAt: aBox at: aGame
 	effect := aGame board effectOfBox: aBox.
 	numberOfBox := aBox.
