@@ -1,3 +1,3 @@
 accessing-positions
 historyOf: aPlayer
-	^ playersPositionsHistories  at: aPlayer ifAbsentPut: [ OrderedCollection with: (Position currentlyIn: 0 at: 0) ]
+	^ playersPositions  at: aPlayer ifAbsentPut: [ OrderedCollection with: (Position currentlyIn: 0 at: 0) ]

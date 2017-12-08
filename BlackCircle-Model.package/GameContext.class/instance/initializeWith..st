@@ -4,5 +4,5 @@ initializeWith: aTotalNumberOfPlayers
 	currentAmortiguation := 1.
 	currentPlayerIndex := 1.
 	hasGameEnded := false.
-		playersPositionsHistories := Dictionary new.
+		playersPositions := Dictionary new.
 	gameHistory := OrderedCollection new

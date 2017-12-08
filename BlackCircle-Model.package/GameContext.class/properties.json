@@ -10,8 +10,8 @@
 		"hasGameEnded",
 		"currentAmortiguation",
 		"totalNumberOfPlayers",
-		"playersPositionsHistories",
-		"gameHistory"
+		"gameHistory",
+		"playersPositions"
 	],
 	"name" : "GameContext",
 	"type" : "normal"

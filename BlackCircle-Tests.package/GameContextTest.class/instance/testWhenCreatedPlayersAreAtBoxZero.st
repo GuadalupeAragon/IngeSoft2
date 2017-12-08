@@ -1,6 +1,6 @@
 tests
 testWhenCreatedPlayersAreAtBoxZero
-	| player gameHistory |
+	| player gameContext |
 	player := Player named: 'guadalupe'.
-	gameHistory := GameContext  withTotalNumberOfPlayers:1.
-	self assert: (gameHistory positionOf: player) currentBox equals: 0
+	gameContext := GameContext  withTotalNumberOfPlayers:1.
+	self assert: (gameContext positionOf: player) currentBox equals: 0
