@@ -1,7 +1,7 @@
 applying
 playedBy: aPlayer at: aGame
-	| effect  |
+	| effect |
+
 	effect := aGame context lastEffectOrCard.
-	
-	effect reapplyAt: aGame.
-	aGame context savePlayed: self playedBy: aPlayer
+		aGame context savePlayed: self playedBy: aPlayer.
+	effect reapplyAt: aGame

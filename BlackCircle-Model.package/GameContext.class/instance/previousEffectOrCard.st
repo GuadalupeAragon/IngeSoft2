@@ -1,5 +1,5 @@
 accessing-previousPlayed
-previousEffect
+previousEffectOrCard
 | played |
 played := self previousPlayed.
 

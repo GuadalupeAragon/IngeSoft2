@@ -1,3 +1,3 @@
 applying
 undoAt: aGame
-	(aGame  context  previousEffect ) undoAt: aGame
+	(aGame  context  previousEffectOrCard ) undoAt: aGame

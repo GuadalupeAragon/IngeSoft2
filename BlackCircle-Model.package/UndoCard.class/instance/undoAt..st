@@ -1,4 +1,4 @@
 applying
 undoAt: aGame
-	aGame context  previousEffect redoAt: aGame
+	aGame context  previousEffectOrCard redoAt: aGame
 

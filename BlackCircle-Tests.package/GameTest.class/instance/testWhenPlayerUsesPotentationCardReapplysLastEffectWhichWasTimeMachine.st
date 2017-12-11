@@ -42,6 +42,7 @@ testWhenPlayerUsesPotentationCardReapplysLastEffectWhichWasTimeMachine
 	game playTurn: playerFacu.
 	self assert: (game context positionOf: playerFacu) currentBox equals: 0.
 	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
+
 	game playTurn: playerGuada.
 	self assert: (game context positionOf: playerGuada) currentBox equals: 5.
 	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
