@@ -20,14 +20,14 @@ testWhenPlayerIsAtWormholeBoxMovesBackwards4Boxes
 			self deckWithOverloadCard 
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(3 1 2 1)))}.
 	game playTurn: playerOne.
-	self assert: (game history positionOf: playerOne) currentBox equals: 3.
-	self assert: (game history positionOf: playerOne) currentLap equals: 0.
+	self assert: (game context positionOf: playerOne) currentBox equals: 3.
+	self assert: (game context positionOf: playerOne) currentLap equals: 0.
 	game playTurn: playerTwo.
-	self assert: (game history positionOf: playerTwo) currentBox equals: 1.
-	self assert: (game history positionOf: playerTwo) currentLap equals: 0.
+	self assert: (game context positionOf: playerTwo) currentBox equals: 1.
+	self assert: (game context positionOf: playerTwo) currentLap equals: 0.
 	game playTurn: playerOne.
-	self assert: (game history positionOf: playerOne) currentBox equals: 5.
-	self assert: (game history positionOf: playerOne) currentLap equals: 0.
+	self assert: (game context positionOf: playerOne) currentBox equals: 5.
+	self assert: (game context positionOf: playerOne) currentLap equals: 0.
 	game playTurn: playerTwo.
-	self assert: (game history positionOf: playerTwo) currentBox equals: -2.
-	self assert: (game history positionOf: playerTwo) currentLap equals: 0
+	self assert: (game context positionOf: playerTwo) currentBox equals: -2.
+	self assert: (game context positionOf: playerTwo) currentLap equals: 0

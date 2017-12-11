@@ -1,5 +1,5 @@
 playing
 changeCurrentPlayer
-	players size = currentPlayerIndex
+	totalNumberOfPlayers  = currentPlayerIndex
 		ifTrue: [ currentPlayerIndex := 1 ]
 		ifFalse: [ currentPlayerIndex := currentPlayerIndex + 1 ]

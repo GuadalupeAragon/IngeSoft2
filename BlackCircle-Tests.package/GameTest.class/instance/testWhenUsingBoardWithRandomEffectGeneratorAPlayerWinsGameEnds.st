@@ -10,5 +10,5 @@ testWhenUsingBoardWithRandomEffectGeneratorAPlayerWinsGameEnds
 		generatingCardsFrom:
 			self deckRandomCardGenerator
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: Random new)}.
-	[ game hasEnded ] whileFalse: [ game playTurn: player ].
+	[ game context hasEnded ] whileFalse: [ game playTurn: player ].
 	self assert: game winner equals: player

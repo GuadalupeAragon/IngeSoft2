@@ -1,0 +1,35 @@
+{
+	"instance" : {
+		"positionOf:" : "Guadalupe 12/7/2017 19:25",
+		"ownerOfTheCardRemoved" : "Guadalupe 12/7/2017 19:25",
+		"playerOf:" : "Guadalupe 12/7/2017 19:25",
+		"playerToWhomWasApplied:" : "Guadalupe 12/7/2017 19:25",
+		"savePlayed:playedBy:" : "Guadalupe 12/8/2017 10:29",
+		"gameEnded" : "Guadalupe 12/7/2017 12:17",
+		"effectOrCardOf:" : "Guadalupe 12/7/2017 19:25",
+		"saveEffect:appliedTo:" : "Guadalupe 12/8/2017 10:28",
+		"historyOf:" : "Guadalupe 12/8/2017 09:57",
+		"previousEffectOrCard" : "Guadalupe 12/11/2017 09:24",
+		"updatePositionOf:at:" : "Guadalupe 12/7/2017 19:26",
+		"cardRemovedAt:" : "Guadalupe 12/8/2017 10:28",
+		"hasEnded" : "Guadalupe 12/7/2017 12:15",
+		"amortiguateWithFactorOf:" : "Guadalupe 12/7/2017 12:13",
+		"initializeWith:" : "Guadalupe 12/8/2017 09:57",
+		"lastCardRemoved" : "Guadalupe 12/8/2017 10:28",
+		"currentAmortiguation" : "Guadalupe 12/7/2017 12:10",
+		"changeCurrentPlayer" : "Guadalupe 12/7/2017 12:31",
+		"previousCardRemoved" : "Guadalupe 12/7/2017 19:26",
+		"previousPlayerWhoPlayed" : "Guadalupe 12/7/2017 19:26",
+		"lastEffectOrCard" : "Guadalupe 12/8/2017 10:28",
+		"previousPositionOf:" : "Guadalupe 12/7/2017 19:25",
+		"previousPlayed" : "Guadalupe 12/7/2017 19:26",
+		"lastPlayed" : "Guadalupe 12/7/2017 19:25",
+		"lastPlayerWhoPlayed" : "Guadalupe 12/7/2017 19:25",
+		"currentPlayerIndex" : "Guadalupe 12/7/2017 12:20",
+		"savePlayed:thatRemoved:from:" : "Guadalupe 12/7/2017 19:26",
+		"changeAmortiguationTo:" : "Guadalupe 12/7/2017 12:13"
+	},
+	"class" : {
+		"withTotalNumberOfPlayers:" : "Guadalupe 12/7/2017 12:26"
+	}
+}

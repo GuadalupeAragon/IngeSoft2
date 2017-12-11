@@ -1,5 +1,5 @@
 applying
 undoAt: aGame
 	|  player |
-	player := aGame  history playerToWhomWasApplied: self.
-	self applyTo: player at: aGame atPosition: (aGame history  positionOf: player)
+	player := aGame  context playerToWhomWasApplied: self.
+	self applyTo: player at: aGame atPosition: (aGame context  positionOf: player)

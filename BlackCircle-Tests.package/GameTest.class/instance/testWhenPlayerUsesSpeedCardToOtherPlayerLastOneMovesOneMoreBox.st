@@ -21,16 +21,16 @@ testWhenPlayerUsesSpeedCardToOtherPlayerLastOneMovesOneMoreBox
 				facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 2)))}.
 	game apply: speedCard playedBy: playerGuada to: playerGuada.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 5.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 5.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 2.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 2.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
 	game apply: speedCard playedBy: playerGuada to: playerFacu.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 10.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 10.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
 	game apply: speedCard playedBy: playerFacu to: playerFacu.
 	game playTurn: playerFacu.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 6.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0
+	self assert: (game context positionOf: playerFacu) currentBox equals: 6.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0

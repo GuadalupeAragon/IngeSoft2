@@ -1,9 +1,9 @@
 applying
 undoAt: aGame
 	| player |
-	player := aGame  history playerToWhomWasApplied: self.
+	player := aGame  context playerToWhomWasApplied: self.
 	self
 		move: player
 		at: aGame
 		numberOfBoxes: 4
-		from: (aGame history  positionOf: player)
+		from: (aGame context  positionOf: player)

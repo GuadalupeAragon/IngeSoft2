@@ -1,5 +1,5 @@
 accessing
 redoAt: aGame
 	| player |
-	player := aGame  history previousPlayerWhoPlayed.
-	self applyTo: player at: aGame atPosition: (aGame history positionOf: player)
+	player := aGame  context previousPlayerWhoPlayed.
+	self applyTo: player at: aGame atPosition: (aGame context positionOf: player)

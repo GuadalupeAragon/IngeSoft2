@@ -1,4 +1,4 @@
 applying
 playedBy: aPlayer at: aGame
 	
-	aGame amortiguateWithFactorOf: 2
+	aGame context amortiguateWithFactorOf: 2

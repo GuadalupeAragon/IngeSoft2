@@ -30,9 +30,9 @@ testWhenPlayerUsesMirrorCardToGetACardBoxAllPlayersButHimGetsOneMoreCard
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(2)))}.
 	game apply: mirrorCard playedBy: playerGuada at: 2.
 	game playTurn: playerGuada.
-	self assert: (game history positionOf: playerGuada) currentBox equals: 2.
-	self assert: (game history positionOf: playerGuada) currentLap equals: 0.
-	self assert: (game history positionOf: playerFacu) currentBox equals: 0.
-	self assert: (game history positionOf: playerFacu) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 2.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerFacu) currentBox equals: 0.
+	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
 	self assert: (game cardsOf: playerGuada) equals: (OrderedCollection with: speedCard).
 	self assert: (game cardsOf: playerFacu ) equals: (OrderedCollection with: overloadCard with: mirrorCard with: speedCard)

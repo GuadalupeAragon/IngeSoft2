@@ -1,6 +1,6 @@
 applying
 undoAt: aGame
 	|  player |
-	player := aGame history  playerToWhomWasApplied: self.
+	player := aGame context  playerToWhomWasApplied: self.
 	self applyEffectToPlayersAt: aGame exceptFor: player  moving: nBoxes
 	

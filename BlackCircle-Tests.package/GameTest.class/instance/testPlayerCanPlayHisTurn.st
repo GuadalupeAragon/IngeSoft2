@@ -13,4 +13,4 @@ testPlayerCanPlayHisTurn
 			{(Dice with: 6 facesGeneratingNumbersFrom: Random new).
 			(Dice with: 4 facesGeneratingNumbersFrom: Random new)}.
 	game playTurn: player.
-	self assert: (game history positionOf: player) currentBox > 0
+	self assert: (game context positionOf: player) currentBox > 0
