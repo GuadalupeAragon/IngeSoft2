@@ -27,5 +27,5 @@ testWhenPlayerUsesMirrorCardToMoonWalkBoxMovesBackwardsNBoxes
 	game playTurn: playerFacu.
 	self assert: (game context positionOf: playerFacu) currentBox equals: 4.
 	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
-		self assert: (game context positionOf: playerGuada) currentBox equals: 3.
-	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 3.
+	self assert: (game context positionOf: playerGuada) currentLap equals: 0
