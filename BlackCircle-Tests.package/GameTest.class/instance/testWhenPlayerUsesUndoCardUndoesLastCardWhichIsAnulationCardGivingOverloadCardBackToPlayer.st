@@ -1,5 +1,5 @@
 test-InstantCard
-testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardGivingItBackToPlayer
+testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardGivingOverloadCardBackToPlayer
 	| playerGuada board game playerFacu speedCard overloadCardTwo undoCardOne anulationCardTwo deck |
 	playerGuada := self playerGuada.
 	playerFacu := self playerFacu.
@@ -24,17 +24,17 @@ testWhenPlayerUsesUndoCardUndoesLastCardWhichIsAnulationCardGivingItBackToPlayer
 			playerFacu}
 		generatingCardsFrom: deck
 		withDices: {(Dice with: 6 facesGeneratingNumbersFrom: (FixedNumberSequence generating: #(4 1)))}.
-	game apply: speedCard playedBy: playerGuada to: playerGuada.
 	game playTurn: playerGuada.
-	self assert: (game context positionOf: playerGuada) currentBox equals: 5.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 4.
 	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
+	game apply: overloadCardTwo playedBy: playerFacu to: playerGuada.
 	game playTurn: playerFacu.
 	self assert: (game context positionOf: playerFacu) currentBox equals: 1.
 	self assert: (game context positionOf: playerFacu) currentLap equals: 0.
-	game apply: anulationCardTwo playedBy: playerFacu toPermanetCard: speedCard.
-	game apply: undoCardOne  playedBy: playerGuada .
+	game apply: anulationCardTwo playedBy: playerFacu toPermanetCard: overloadCardTwo.
+	game apply: undoCardOne playedBy: playerGuada.
 	game playTurn: playerGuada.
-	self assert: (game context positionOf: playerGuada) currentBox equals: 10.
+	self assert: (game context positionOf: playerGuada) currentBox equals: 6.
 	self assert: (game context positionOf: playerGuada) currentLap equals: 0.
 	game playTurn: playerFacu.
 	self assert: (game context positionOf: playerFacu) currentBox equals: 2.
